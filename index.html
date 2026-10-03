@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Recipe Box</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Public+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#f2f5f2; --surface:#ffffff; --surface-2:#e9efea;
+  --ink:#18211d; --ink-2:#4d5c55; --mut:#77857e;
+  --line:#d8e0d9; --line-2:#c3cec6;
+  --acc:#2f6b4c; --acc-ink:#ffffff; --acc-soft:#dfeee4;
+  --heat:#b2532c; --star:#c2921f;
+  --shadow:0 1px 2px rgba(24,33,29,.05),0 8px 24px -12px rgba(24,33,29,.18);
+  --r:12px; color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --bg:#111614; --surface:#1a211e; --surface-2:#222b27;
+  --ink:#e9efea; --ink-2:#b4c2ba; --mut:#8b9a92;
+  --line:#2c3733; --line-2:#3c4944;
+  --acc:#6cc394; --acc-ink:#0d1512; --acc-soft:#1f302a;
+  --heat:#e08256; --star:#e0b44a;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7);
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#111614; --surface:#1a211e; --surface-2:#222b27;
+  --ink:#e9efea; --ink-2:#b4c2ba; --mut:#8b9a92;
+  --line:#2c3733; --line-2:#3c4944;
+  --acc:#6cc394; --acc-ink:#0d1512; --acc-soft:#1f302a;
+  --heat:#e08256; --star:#e0b44a;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -14px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+[hidden]{display:none!important}
+h1,h2,h3,.serif{font-family:"Newsreader",Georgia,serif;font-weight:600;text-wrap:balance}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:0 48px}
+.top{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top-in{max-width:1180px;margin:0 auto;padding:calc(14px + env(safe-area-inset-top,0px)) 16px 12px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.brand{display:flex;align-items:baseline;gap:10px;margin-right:auto}
+.brand h1{font-size:23px;margin:0;letter-spacing:-.01em}
+.count{font-size:12.5px;color:var(--mut);font-variant-numeric:tabular-nums}
+.search{position:relative;flex:1 1 200px;max-width:340px}
+.search input{width:100%;padding:8px 12px 8px 32px;border:1px solid var(--line-2);border-radius:999px;background:var(--surface)}
+.search svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--mut)}
+.btn{border:1px solid var(--line-2);background:var(--surface);border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:600;white-space:nowrap}
+.btn:hover{border-color:var(--acc)}
+.btn-p{background:var(--acc);color:var(--acc-ink);border-color:var(--acc)}
+.btn-q{border:0;background:transparent;color:var(--ink-2);padding:6px 8px;font-size:13px}
+.btn-q:hover{color:var(--acc)}
+.pill{position:relative}
+.pill .dot{position:absolute;top:-3px;right:-3px;min-width:17px;height:17px;border-radius:999px;background:var(--heat);color:#fff;font-size:10.5px;font-weight:700;display:grid;place-items:center;padding:0 4px}
+/* segmented + component */
+.seg{display:inline-flex;border:1px solid var(--line-2);border-radius:999px;overflow:hidden;background:var(--surface);margin-right:4px}
+.seg button{border:0;background:transparent;padding:5px 14px;font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.seg button[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink)}
+.comp{background:var(--acc-soft);border:1px solid var(--acc);border-radius:var(--r);padding:14px 16px;margin-bottom:14px}
+.comp h4{margin:0 0 3px;font-size:18px;font-family:"Newsreader",Georgia,serif}
+.comp .why{font-size:13px;color:var(--ink-2);margin:0 0 11px;line-height:1.45}
+.comp ol.steps li{padding-left:34px}
+.comp ol.steps li::before{width:22px;height:22px;font-size:12px}
+.badge{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--acc);background:var(--acc-soft);border:1px solid var(--acc);border-radius:5px;padding:2px 6px;align-self:flex-start}
+.loading{color:var(--mut);padding:40px 0;text-align:center}
+.bar{display:flex;flex-wrap:wrap;gap:7px;align-items:center;padding:12px 0 16px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 11px;font-size:12.5px;color:var(--ink-2)}
+.chip[aria-pressed="true"]{background:var(--acc-soft);border-color:var(--acc);color:var(--acc);font-weight:600}
+.spacer{flex:1}
+select.sort{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 10px;font-size:12.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;align-items:start}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:15px 16px 13px;text-align:left;display:flex;flex-direction:column;gap:9px;box-shadow:var(--shadow);transition:transform .12s ease,border-color .12s ease;width:100%}
+.card:hover{transform:translateY(-2px);border-color:var(--line-2)}
+.card h3{margin:0;font-size:19px;line-height:1.22}
+.card .meta{font-size:12.5px;color:var(--mut);display:flex;gap:10px;flex-wrap:wrap;font-variant-numeric:tabular-nums}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2);background:var(--surface-2);border-radius:5px;padding:2px 6px}
+.stars{color:var(--star);font-size:13px;letter-spacing:1px}
+.note-flag{font-size:12px;color:var(--mut);font-style:italic;border-top:1px dashed var(--line);padding-top:8px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.empty{border:1px dashed var(--line-2);border-radius:var(--r);padding:36px 24px;text-align:center;color:var(--mut)}
+.sheet{position:fixed;inset:0;z-index:60;background:var(--bg);overflow-y:auto;padding-bottom:env(safe-area-inset-bottom,0px)}
+.sheet-bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:calc(10px + env(safe-area-inset-top,0px)) 16px 10px;display:flex;gap:10px;align-items:center}
+.sheet-bar h2{margin:0;font-size:18px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sheet-in{max-width:1080px;margin:0 auto;padding:18px 16px 60px}
+.cook-head{border-bottom:2px solid var(--acc);padding-bottom:12px;margin-bottom:18px}
+.cook-head h2{font-size:clamp(26px,4.5vw,38px);margin:0 0 6px;line-height:1.08}
+.cook-meta{display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--mut);font-size:13.5px;font-variant-numeric:tabular-nums}
+.cook-meta b{color:var(--ink)}
+.cook-meta a{color:var(--acc)}
+.cook{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:26px;align-items:start;font-size:16px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;box-shadow:var(--shadow)}
+.panel.sticky{position:sticky;top:76px}
+.lab{font-size:11px;text-transform:uppercase;letter-spacing:.11em;color:var(--acc);font-weight:700;margin:0 0 10px;display:flex;align-items:center;gap:8px}
+ul.ing{list-style:none;margin:0;padding:0}
+ul.ing li{border-bottom:1px solid var(--line);display:flex;gap:9px;align-items:flex-start;padding:7px 0}
+ul.ing li:last-child{border-bottom:0}
+ul.ing input[type=checkbox]{margin-top:5px;accent-color:var(--acc);width:15px;height:15px;flex:none}
+ul.ing label{flex:1;cursor:pointer;line-height:1.35}
+ul.ing input:checked + label{color:var(--mut);text-decoration:line-through}
+.addone{border:0;background:transparent;color:var(--mut);font-size:16px;line-height:1;padding:2px 4px;flex:none}
+.addone:hover{color:var(--acc)}
+ol.steps{list-style:none;counter-reset:s;margin:0;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding:11px 0 11px 38px;border-bottom:1px solid var(--line);line-height:1.5}
+ol.steps li:last-child{border-bottom:0}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:11px;width:25px;height:25px;border-radius:999px;background:var(--acc);color:var(--acc-ink);font-size:13px;font-weight:700;display:grid;place-items:center;font-family:"Public Sans",sans-serif}
+.notes-ro{background:var(--surface-2);border-radius:8px;padding:10px 12px;color:var(--ink-2);line-height:1.5}
+.shop-list{list-style:none;margin:0;padding:0}
+.shop-list li{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid var(--line)}
+.shop-list input[type=checkbox]{margin-top:4px;accent-color:var(--acc);width:16px;height:16px;flex:none}
+.shop-list label{flex:1;cursor:pointer}
+.shop-list li.done label{color:var(--mut);text-decoration:line-through}
+.from{display:block;font-size:11.5px;color:var(--mut)}
+.rm{border:0;background:transparent;color:var(--mut);font-size:15px;line-height:1;padding:2px 5px}
+.rm:hover{color:var(--heat)}
+.addbar{display:flex;gap:8px;margin:14px 0 4px}
+.addbar input{flex:1;border:1px solid var(--line-2);border-radius:8px;padding:9px 11px;background:var(--surface)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:999px;font-size:13.5px;font-weight:600;z-index:90;box-shadow:var(--shadow)}
+footer{max-width:1180px;margin:0 auto;padding:22px 16px calc(28px + env(safe-area-inset-bottom,0px));color:var(--mut);font-size:12.5px;border-top:1px solid var(--line)}
+@media (max-width:820px){.cook{grid-template-columns:1fr;gap:18px}.panel.sticky{position:static}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><h1>Recipe Box</h1><span class="count" id="count"></span></div>
+    <div class="search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input id="q" type="search" placeholder="Search recipes or ingredients" autocomplete="off">
+    </div>
+    <button class="btn pill" id="shopBtn">Shopping list<span class="dot" id="shopDot" hidden>0</span></button>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="bar" id="bar"></div>
+  <div class="grid" id="grid"></div>
+</div>
+<footer id="foot"></footer>
+
+<div class="sheet" id="cook" hidden></div>
+<div class="sheet" id="shop" hidden></div>
+
+<script>
+let RECIPES = [];
+const BAKED = [{"createdAt": "2026-09-23T12:00:00.000Z", "ingredients": ["1 lb 80/20 ground beef", "1 lb ground pork", "1 large yellow onion, diced", "1 green bell pepper, diced", "1 red bell pepper, diced", "4 large garlic cloves, minced", "1 tsp sea salt, plus more to taste", "1 tsp freshly cracked black pepper", "1 (15.5-oz) can black beans, drained and rinsed", "1 (15.5-oz) can kidney beans, drained and rinsed", "1 (15.5-oz) can pinto beans, drained and rinsed", "1 (28-oz) can diced tomatoes, undrained", "1 (19-oz) can mild red enchilada sauce", "1/2 cup mild chili powder", "2 tsp ground cumin", "2 bay leaves", "2 Tbsp sugar", "1 tsp cayenne pepper (optional)", "2 tsp Tapatio hot sauce (optional)", "To serve: cilantro, green onions, sour cream, grated cheddar, sliced avocado"], "notes": "The 1/2 cup chili powder sounds like a lot - it's mild, adding smokiness rather than heat. Heat comes from the optional cayenne and Tapatio. Keeps 3-4 days in the fridge, up to 3 months frozen. Long simmer is doing the real work here.", "rating": 0, "servings": "10", "source": "The Modern Proper", "steps": ["Heat a large Dutch oven or pot over medium-high. Add beef, pork, onion, both peppers, garlic, salt and pepper. Cook, breaking up the meat with a wooden spoon, until browned, 8-10 min.", "Add beans, tomatoes, enchilada sauce, chili powder, cumin, bay leaves, sugar, and the cayenne and hot sauce if using. Pour in enough water to cover the beans (about 1-2 cups) and stir well.", "Bring to a boil over high, then reduce to low and simmer, stirring occasionally, at least 1-2 hours - up to 8 hours for best flavor.", "Taste and adjust salt. Ladle into bowls and top with cilantro, green onions, sour cream, cheese and avocado.", "SLOW COOKER: brown the meat mixture in a skillet as in step 1, transfer to the slow cooker, add everything from step 2, stir, and cook on high 4 hours or low 8 hours."], "tags": ["chili", "beef", "slow cooker", "big batch", "freezer"], "title": "Award Winning Chili", "totalTime": "8 hr 20 min (20 min prep)", "updatedAt": "2026-09-23T12:00:00.000Z", "url": "https://themodernproper.com/award-winning-chili", "id": "award-winning-chili"}, {"createdAt": "2026-09-22T12:00:00.000Z", "ingredients": ["2 Tbsp neutral oil (canola)", "2 cups sliced shiitake mushrooms", "1/4 cup finely chopped shallot", "1 Tbsp finely chopped garlic (~3 cloves)", "1 Tbsp finely chopped fresh ginger", "1/2 tsp thinly sliced red Thai chile, plus more to garnish", "1/4 tsp kosher salt", "2 1/2 Tbsp red curry paste", "3 cups reduced-sodium chicken or vegetable broth", "1 (13.5-oz) can unsweetened coconut milk", "2 Tbsp fish sauce", "1 Tbsp lime juice", "2 tsp light brown sugar", "32 frozen mini wontons (pork, chicken or vegetable)", "2 1/2 cups baby bok choy", "Garnish: cilantro, Thai basil, scallions, sliced red chile, crushed peanuts, lime wedges"], "notes": "Swap spinach or napa cabbage for the bok choy; any frozen dumpling works. Chili oil drizzle for extra heat. Leftovers keep 2 days max - dumplings go mushy after that.", "rating": 0, "servings": "4-6", "source": "Food & Wine", "steps": ["Heat oil in a large saucepan or medium Dutch oven over medium-high. Brown the mushrooms, stirring occasionally, 5-8 min.", "Drop to medium. Add shallot, garlic, ginger, chile and salt; stir often until the shallots soften, 1-2 min.", "Stir in the curry paste and cook, stirring constantly, until slightly darkened and very fragrant, about 1 min.", "Add broth, coconut milk, fish sauce, lime juice and brown sugar. Bring to a simmer over medium-high.", "Add the wontons, return to a simmer, then stir in the bok choy. Reduce to medium and simmer uncovered, stirring occasionally, until the dumplings are cooked through and the bok choy is tender-crisp, 3-5 min.", "Divide among bowls, garnish, and serve immediately."], "tags": ["thai", "soup", "weeknight", "one pot"], "title": "Red Curry Dumpling Soup", "totalTime": "40 min", "updatedAt": "2026-09-22T12:00:00.000Z", "url": "https://www.foodandwine.com/red-curry-dumpling-soup-11868814", "id": "red-curry-dumpling-soup"}];
+let SNAPSHOT = "September 24, 2026";
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let query="", kind="all", activeTags=new Set(), sortBy="recent", openId=null, wakeLock=null;
+let shop = load("rb_shop", []);
+
+function load(k,d){ try{ const v=localStorage.getItem(k); return v?JSON.parse(v):d; }catch(e){ return d; } }
+function save(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} }
+
+function toast(m){ document.querySelectorAll(".toast").forEach(t=>t.remove());
+  const d=document.createElement("div"); d.className="toast"; d.textContent=m; document.body.appendChild(d); setTimeout(()=>d.remove(),2000); }
+
+function isDrink(r){ return (r.kind||"food")==="drink"; }
+function inKind(r){ return kind==="all" || (kind==="drink")===isDrink(r); }
+function allTags(){ const s=new Set(); RECIPES.filter(inKind).forEach(r=>(r.tags||[]).forEach(t=>s.add(t))); return [...s].sort(); }
+
+function visible(){
+  const q=query.trim().toLowerCase();
+  let out=RECIPES.filter(r=>{
+    if(!inKind(r)) return false;
+    if(activeTags.size && ![...activeTags].every(t=>(r.tags||[]).includes(t))) return false;
+    if(!q) return true;
+    return [r.title,r.source,(r.tags||[]).join(" "),(r.ingredients||[]).join(" "),r.notes].join(" ").toLowerCase().includes(q);
+  });
+  const mins=r=>{const m=String(r.totalTime||"").match(/\d+/);return m?+m[0]:9999;};
+  if(sortBy==="az") out.sort((a,b)=>a.title.localeCompare(b.title));
+  else if(sortBy==="quick") out.sort((a,b)=>mins(a)-mins(b));
+  else out.sort((a,b)=>String(b.createdAt||"").localeCompare(String(a.createdAt||"")));
+  return out;
+}
+
+function render(){
+  const tags=allTags(), v=visible();
+  $("#count").textContent = RECIPES.length+(RECIPES.length===1?" recipe":" recipes");
+  const nF=RECIPES.filter(r=>!isDrink(r)).length, nD=RECIPES.filter(isDrink).length;
+  const seg=`<div class="seg">
+      <button data-kind="all" aria-pressed="${kind==='all'}">All</button>
+      <button data-kind="food" aria-pressed="${kind==='food'}">Food${nF?" "+nF:""}</button>
+      <button data-kind="drink" aria-pressed="${kind==='drink'}">Drinks${nD?" "+nD:""}</button>
+    </div>`;
+  $("#bar").innerHTML = seg + (tags.length?tags.map(t=>`<button class="chip" aria-pressed="${activeTags.has(t)}" data-tag="${esc(t)}">${esc(t)}</button>`).join("")
+    + (activeTags.size?`<button class="btn-q" id="clearTags">clear</button>`:""):"")
+    + `<span class="spacer"></span>`
+    + `<select class="sort" id="sort" aria-label="Sort recipes"><option value="recent">Recently added</option><option value="az">A–Z</option><option value="quick">Quickest first</option></select>`;
+  $("#sort").value=sortBy;
+  $("#grid").innerHTML = v.length ? v.map(cardHTML).join("") : `<div class="empty" style="grid-column:1/-1">Nothing matches that search.</div>`;
+  $("#foot").innerHTML = `Recipe Box — ${RECIPES.length} recipes, updated ${esc(SNAPSHOT)}. Your checked ingredients and shopping list stay on this device.`;
+}
+
+function cardHTML(r){
+  return `<button class="card" data-open="${esc(r.id)}">
+    ${(r.components||[]).length?`<span class="badge">${esc(r.components[0].name)}</span>`:""}
+    <h3>${esc(r.title)}</h3>
+    <div class="meta">${r.totalTime?`<span>${esc(r.totalTime)}</span>`:""}${r.servings?`<span>Serves ${esc(r.servings)}</span>`:""}${(r.ingredients||[]).length?`<span>${r.ingredients.length} ingredients</span>`:""}</div>
+    ${(r.tags||[]).length?`<div class="tags">${r.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>`:""}
+    ${r.rating?`<span class="stars">${"★".repeat(r.rating)}${"☆".repeat(5-r.rating)}</span>`:""}
+    ${r.notes?`<div class="note-flag">${esc(r.notes)}</div>`:""}
+  </button>`;
+}
+
+function openCook(id){
+  openId=id; $("#cook").hidden=false; document.body.style.overflow="hidden";
+  const r=RECIPES.find(x=>x.id===id);
+  const done=load("rb_ing_"+id,[]);
+  $("#cook").innerHTML=`
+  <div class="sheet-bar">
+    <button class="btn" data-act="close-cook">← Box</button>
+    <h2>${esc(r.title)}</h2>
+    <button class="btn btn-p" data-act="add-all">Add all to list</button>
+  </div>
+  <div class="sheet-in">
+    <div class="cook-head">
+      <h2 class="serif">${esc(r.title)}</h2>
+      <div class="cook-meta">
+        ${r.totalTime?`<span><b>${esc(r.totalTime)}</b> total</span>`:""}
+        ${r.servings?`<span>Serves <b>${esc(r.servings)}</b></span>`:""}
+        ${(r.tags||[]).length?`<span>${r.tags.map(esc).join(" · ")}</span>`:""}
+        ${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.source||"Source")} ↗</a>`:(r.source?`<span>${esc(r.source)}</span>`:"")}
+      </div>
+    </div>
+    <div class="cook">
+      <div>
+        ${(r.components||[]).map(c=>`<div class="comp">
+          <p class="lab">Make this first</p>
+          <h4>${esc(c.name)}</h4>
+          ${c.why?`<p class="why">${esc(c.why)}</p>`:""}
+          <ul class="ing">${(c.ingredients||[]).map((ing,i)=>`<li>
+            <input type="checkbox" id="cing${i}">
+            <label for="cing${i}">${esc(ing)}</label>
+            <button class="addone" data-add="${esc(ing)}" title="Add to shopping list">+</button></li>`).join("")}</ul>
+          <ol class="steps" style="margin-top:10px">${(c.steps||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ol>
+        </div>`).join("")}
+        <div class="panel sticky">
+        <p class="lab">Ingredients<span class="spacer"></span><span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--mut)">tap to check off</span></p>
+        <ul class="ing">${(r.ingredients||[]).map((ing,i)=>`<li>
+          <input type="checkbox" id="ing${i}" data-ing="${i}" ${done.includes(i)?"checked":""}>
+          <label for="ing${i}">${esc(ing)}</label>
+          <button class="addone" data-add="${esc(ing)}" title="Add to shopping list">+</button></li>`).join("")}</ul>
+      </div></div>
+      <div>
+        <div class="panel"><p class="lab">Method</p>
+          <ol class="steps">${(r.steps||[]).map(s=>`<li>${esc(s)}</li>`).join("")}</ol></div>
+        ${r.notes?`<div class="panel" style="margin-top:14px"><p class="lab">Notes</p><div class="notes-ro">${esc(r.notes)}</div></div>`:""}
+      </div>
+    </div>
+  </div>`;
+  $("#cook").scrollTop=0; requestWake();
+}
+function closeCook(){ openId=null; $("#cook").hidden=true; document.body.style.overflow=""; releaseWake(); }
+async function requestWake(){ try{ wakeLock=await navigator.wakeLock?.request("screen"); }catch(e){} }
+function releaseWake(){ try{ wakeLock?.release(); }catch(e){} wakeLock=null; }
+
+function dot(){ const n=shop.filter(i=>!i.done).length, d=$("#shopDot"); d.hidden=!n; d.textContent=n; }
+function openShop(){ $("#shop").hidden=false; document.body.style.overflow="hidden"; renderShop(); }
+function closeShop(){ $("#shop").hidden=true; if($("#cook").hidden) document.body.style.overflow=""; }
+function renderShop(){
+  $("#shop").innerHTML=`
+  <div class="sheet-bar"><button class="btn" data-act="close-shop">← Box</button><h2>Shopping list</h2>
+    ${shop.some(i=>i.done)?`<button class="btn" data-act="clear-done">Clear checked</button>`:""}</div>
+  <div class="sheet-in" style="max-width:640px"><div class="panel">
+    ${shop.length?`<ul class="shop-list">${shop.map((i,n)=>`<li class="${i.done?"done":""}">
+      <input type="checkbox" id="s${n}" data-idx="${n}" ${i.done?"checked":""}>
+      <label for="s${n}">${esc(i.text)}${i.from?`<span class="from">${esc(i.from)}</span>`:""}</label>
+      <button class="rm" data-rm="${n}" aria-label="Remove">✕</button></li>`).join("")}</ul>`
+      :`<p style="color:var(--mut);margin:6px 0">Nothing on the list yet. Open a recipe and tap <b>+</b> next to an ingredient, or add something below.</p>`}
+    <div class="addbar"><input id="shopAdd" placeholder="Add an item" autocomplete="off"><button class="btn btn-p" data-act="shop-add">Add</button></div>
+  </div></div>`;
+}
+function writeShop(items){ shop=items; save("rb_shop",shop); dot(); if(!$("#shop").hidden) renderShop(); }
+function addToShop(texts,from){
+  const have=new Set(shop.map(i=>i.text.toLowerCase()));
+  const add=texts.filter(t=>t&&!have.has(t.toLowerCase())).map(t=>({text:t,done:false,from:from||""}));
+  if(!add.length){ toast("Already on the list"); return; }
+  writeShop(shop.concat(add)); toast(add.length===1?"Added to list":add.length+" items added");
+}
+
+document.addEventListener("click",e=>{
+  const t=e.target, card=t.closest("[data-open]");
+  if(card) return openCook(card.dataset.open);
+  if(t.id==="shopBtn") return openShop();
+  if(t.dataset.kind!==undefined){ kind=t.dataset.kind; activeTags.clear(); return render(); }
+  if(t.dataset.tag!==undefined){ const g=t.dataset.tag; activeTags.has(g)?activeTags.delete(g):activeTags.add(g); return render(); }
+  if(t.id==="clearTags"){ activeTags.clear(); return render(); }
+  if(t.dataset.add!==undefined){ const r=RECIPES.find(x=>x.id===openId); return addToShop([t.dataset.add],r&&r.title); }
+  if(t.dataset.rm!==undefined){ return writeShop(shop.filter((_,n)=>n!==+t.dataset.rm)); }
+  const a=t.dataset.act; if(!a) return;
+  if(a==="close-cook") return closeCook();
+  if(a==="close-shop") return closeShop();
+  if(a==="add-all"){ const r=RECIPES.find(x=>x.id===openId); const c=(r.components||[]).flatMap(x=>x.ingredients||[]); return addToShop(c.concat(r.ingredients||[]),r.title); }
+  if(a==="shop-add"){ const v=$("#shopAdd").value.trim(); if(v){ addToShop([v],""); } return; }
+  if(a==="clear-done") return writeShop(shop.filter(i=>!i.done));
+});
+document.addEventListener("change",e=>{
+  const t=e.target;
+  if(t.id==="sort"){ sortBy=t.value; return render(); }
+  if(t.dataset.idx!==undefined) return writeShop(shop.map((i,n)=>n===+t.dataset.idx?{...i,done:t.checked}:i));
+  if(t.dataset.ing!==undefined && openId){
+    const done=[...document.querySelectorAll("#cook .ing input:checked")].map(i=>+i.dataset.ing);
+    save("rb_ing_"+openId,done);
+  }
+});
+document.addEventListener("input",e=>{ if(e.target.id==="q"){ query=e.target.value; render(); } });
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape"){ if(!$("#shop").hidden) closeShop(); else if(!$("#cook").hidden) closeCook(); }
+  if(e.key==="Enter"&&e.target.id==="shopAdd"){ e.preventDefault(); const v=e.target.value.trim(); if(v) addToShop([v],""); }
+});
+document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"&&openId&&!wakeLock) requestWake(); });
+
+dot();
+$("#grid").innerHTML='<div class="loading" style="grid-column:1/-1">Loading recipes…</div>';
+fetch("recipes.json?v="+Date.now())
+  .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data=>{ RECIPES=data; SNAPSHOT=new Date().toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"}); render(); })
+  .catch(()=>{ RECIPES=BAKED; render(); $("#foot").innerHTML="Couldn't reach the live recipe list, so this is the copy saved with the page."; });
+</script>
+</body>
+</html>
