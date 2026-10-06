@@ -128,6 +128,12 @@ ol.steps li::before{content:counter(s);position:absolute;left:0;top:11px;width:2
 .shop-list input[type=checkbox]{margin-top:4px;accent-color:var(--acc);width:16px;height:16px;flex:none}
 .shop-list label{flex:1;cursor:pointer}
 .shop-list li.done label{color:var(--mut);text-decoration:line-through}
+.shop-list li.done{opacity:.6}
+.whobar{display:flex;align-items:center;gap:8px;color:var(--mut);font-size:13px;margin:0 0 10px;flex-wrap:wrap}
+.linkb{border:0;background:transparent;color:var(--acc);font:inherit;text-decoration:underline;padding:0;cursor:pointer}
+.sync{margin-left:auto;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--mut)}
+.sync.on{color:var(--acc);font-weight:700}
+.hint{color:var(--mut);font-size:12.5px;margin:12px 2px 0}
 .from{display:block;font-size:11.5px;color:var(--mut)}
 .rm{border:0;background:transparent;color:var(--mut);font-size:15px;line-height:1;padding:2px 5px}
 .rm:hover{color:var(--heat)}
@@ -148,7 +154,7 @@ footer{max-width:1180px;margin:0 auto;padding:22px 16px calc(28px + env(safe-are
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
       <input id="q" type="search" placeholder="Search recipes or ingredients" autocomplete="off">
     </div>
-    <button class="btn pill" id="shopBtn">Shopping list<span class="dot" id="shopDot" hidden>0</span></button>
+    <button class="btn pill" id="shopBtn">Grocery list<span class="dot" id="shopDot" hidden>0</span></button>
   </div>
 </header>
 
@@ -163,13 +169,15 @@ footer{max-width:1180px;margin:0 auto;padding:22px 16px calc(28px + env(safe-are
 
 <script>
 let RECIPES = [];
-const BAKED = [{"createdAt": "2026-09-23T12:00:00.000Z", "ingredients": ["1 lb 80/20 ground beef", "1 lb ground pork", "1 large yellow onion, diced", "1 green bell pepper, diced", "1 red bell pepper, diced", "4 large garlic cloves, minced", "1 tsp sea salt, plus more to taste", "1 tsp freshly cracked black pepper", "1 (15.5-oz) can black beans, drained and rinsed", "1 (15.5-oz) can kidney beans, drained and rinsed", "1 (15.5-oz) can pinto beans, drained and rinsed", "1 (28-oz) can diced tomatoes, undrained", "1 (19-oz) can mild red enchilada sauce", "1/2 cup mild chili powder", "2 tsp ground cumin", "2 bay leaves", "2 Tbsp sugar", "1 tsp cayenne pepper (optional)", "2 tsp Tapatio hot sauce (optional)", "To serve: cilantro, green onions, sour cream, grated cheddar, sliced avocado"], "notes": "The 1/2 cup chili powder sounds like a lot - it's mild, adding smokiness rather than heat. Heat comes from the optional cayenne and Tapatio. Keeps 3-4 days in the fridge, up to 3 months frozen. Long simmer is doing the real work here.", "rating": 0, "servings": "10", "source": "The Modern Proper", "steps": ["Heat a large Dutch oven or pot over medium-high. Add beef, pork, onion, both peppers, garlic, salt and pepper. Cook, breaking up the meat with a wooden spoon, until browned, 8-10 min.", "Add beans, tomatoes, enchilada sauce, chili powder, cumin, bay leaves, sugar, and the cayenne and hot sauce if using. Pour in enough water to cover the beans (about 1-2 cups) and stir well.", "Bring to a boil over high, then reduce to low and simmer, stirring occasionally, at least 1-2 hours - up to 8 hours for best flavor.", "Taste and adjust salt. Ladle into bowls and top with cilantro, green onions, sour cream, cheese and avocado.", "SLOW COOKER: brown the meat mixture in a skillet as in step 1, transfer to the slow cooker, add everything from step 2, stir, and cook on high 4 hours or low 8 hours."], "tags": ["chili", "beef", "slow cooker", "big batch", "freezer"], "title": "Award Winning Chili", "totalTime": "8 hr 20 min (20 min prep)", "updatedAt": "2026-09-23T12:00:00.000Z", "url": "https://themodernproper.com/award-winning-chili", "id": "award-winning-chili"}, {"createdAt": "2026-09-22T12:00:00.000Z", "ingredients": ["2 Tbsp neutral oil (canola)", "2 cups sliced shiitake mushrooms", "1/4 cup finely chopped shallot", "1 Tbsp finely chopped garlic (~3 cloves)", "1 Tbsp finely chopped fresh ginger", "1/2 tsp thinly sliced red Thai chile, plus more to garnish", "1/4 tsp kosher salt", "2 1/2 Tbsp red curry paste", "3 cups reduced-sodium chicken or vegetable broth", "1 (13.5-oz) can unsweetened coconut milk", "2 Tbsp fish sauce", "1 Tbsp lime juice", "2 tsp light brown sugar", "32 frozen mini wontons (pork, chicken or vegetable)", "2 1/2 cups baby bok choy", "Garnish: cilantro, Thai basil, scallions, sliced red chile, crushed peanuts, lime wedges"], "notes": "Swap spinach or napa cabbage for the bok choy; any frozen dumpling works. Chili oil drizzle for extra heat. Leftovers keep 2 days max - dumplings go mushy after that.", "rating": 0, "servings": "4-6", "source": "Food & Wine", "steps": ["Heat oil in a large saucepan or medium Dutch oven over medium-high. Brown the mushrooms, stirring occasionally, 5-8 min.", "Drop to medium. Add shallot, garlic, ginger, chile and salt; stir often until the shallots soften, 1-2 min.", "Stir in the curry paste and cook, stirring constantly, until slightly darkened and very fragrant, about 1 min.", "Add broth, coconut milk, fish sauce, lime juice and brown sugar. Bring to a simmer over medium-high.", "Add the wontons, return to a simmer, then stir in the bok choy. Reduce to medium and simmer uncovered, stirring occasionally, until the dumplings are cooked through and the bok choy is tender-crisp, 3-5 min.", "Divide among bowls, garnish, and serve immediately."], "tags": ["thai", "soup", "weeknight", "one pot"], "title": "Red Curry Dumpling Soup", "totalTime": "40 min", "updatedAt": "2026-09-22T12:00:00.000Z", "url": "https://www.foodandwine.com/red-curry-dumpling-soup-11868814", "id": "red-curry-dumpling-soup"}];
+const BAKED = [];
 let SNAPSHOT = "September 24, 2026";
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 let query="", kind="all", activeTags=new Set(), sortBy="recent", openId=null, wakeLock=null;
-let shop = load("rb_shop", []);
+let shop = [];
+let ME = (function(){ try{ return localStorage.getItem("rb_me")||""; }catch(e){ return ""; } })();
+let LIVE = false;
 
 function load(k,d){ try{ const v=localStorage.getItem(k); return v?JSON.parse(v):d; }catch(e){ return d; } }
 function save(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} }
@@ -211,7 +219,7 @@ function render(){
     + `<select class="sort" id="sort" aria-label="Sort recipes"><option value="recent">Recently added</option><option value="az">A–Z</option><option value="quick">Quickest first</option></select>`;
   $("#sort").value=sortBy;
   $("#grid").innerHTML = v.length ? v.map(cardHTML).join("") : `<div class="empty" style="grid-column:1/-1">Nothing matches that search.</div>`;
-  $("#foot").innerHTML = `Recipe Box — ${RECIPES.length} recipes, updated ${esc(SNAPSHOT)}. Your checked ingredients and shopping list stay on this device.`;
+  $("#foot").innerHTML = `Recipe Box — ${RECIPES.length} recipes, updated ${esc(SNAPSHOT)}. Checked ingredients stay on this device. The grocery list is shared and live.`;
 }
 
 function cardHTML(r){
@@ -280,25 +288,49 @@ function releaseWake(){ try{ wakeLock?.release(); }catch(e){} wakeLock=null; }
 function dot(){ const n=shop.filter(i=>!i.done).length, d=$("#shopDot"); d.hidden=!n; d.textContent=n; }
 function openShop(){ $("#shop").hidden=false; document.body.style.overflow="hidden"; renderShop(); }
 function closeShop(){ $("#shop").hidden=true; if($("#cook").hidden) document.body.style.overflow=""; }
-function renderShop(){
-  $("#shop").innerHTML=`
-  <div class="sheet-bar"><button class="btn" data-act="close-shop">← Box</button><h2>Shopping list</h2>
-    ${shop.some(i=>i.done)?`<button class="btn" data-act="clear-done">Clear checked</button>`:""}</div>
-  <div class="sheet-in" style="max-width:640px"><div class="panel">
-    ${shop.length?`<ul class="shop-list">${shop.map((i,n)=>`<li class="${i.done?"done":""}">
-      <input type="checkbox" id="s${n}" data-idx="${n}" ${i.done?"checked":""}>
-      <label for="s${n}">${esc(i.text)}${i.from?`<span class="from">${esc(i.from)}</span>`:""}</label>
-      <button class="rm" data-rm="${n}" aria-label="Remove">✕</button></li>`).join("")}</ul>`
-      :`<p style="color:var(--mut);margin:6px 0">Nothing on the list yet. Open a recipe and tap <b>+</b> next to an ingredient, or add something below.</p>`}
-    <div class="addbar"><input id="shopAdd" placeholder="Add an item" autocomplete="off"><button class="btn btn-p" data-act="shop-add">Add</button></div>
-  </div></div>`;
+
+function sortedShop(){
+  const k=i=>(i.ts||0);
+  return shop.filter(i=>!i.done).sort((a,b)=>k(a)-k(b))
+    .concat(shop.filter(i=>i.done).sort((a,b)=>k(a)-k(b)));
 }
-function writeShop(items){ shop=items; save("rb_shop",shop); dot(); if(!$("#shop").hidden) renderShop(); }
+function renderShop(){
+  const items=sortedShop(), nOpen=items.filter(i=>!i.done).length;
+  $("#shop").innerHTML=`
+  <div class="sheet-bar"><button class="btn" data-act="close-shop">← Box</button><h2>Grocery list</h2>
+    ${shop.some(i=>i.done)?`<button class="btn" data-act="clear-done">Clear checked</button>`:""}</div>
+  <div class="sheet-in" style="max-width:640px">
+    <div class="whobar">
+      ${ME?`Shopping as <b>${esc(ME)}</b> · <button class="linkb" data-act="change-me">change</button>`
+         :`Add your name so the list shows who added what.`}
+      <span class="sync ${LIVE?"on":""}">${LIVE?"live":"connecting…"}</span>
+    </div>
+    ${ME?"":`<div class="addbar"><input id="meAdd" placeholder="Your first name" autocomplete="off"><button class="btn btn-p" data-act="me-save">Save</button></div>`}
+    <div class="panel">
+    ${items.length?`<ul class="shop-list">${items.map(i=>`<li class="${i.done?"done":""}">
+      <input type="checkbox" id="s_${esc(i.key)}" data-key="${esc(i.key)}" ${i.done?"checked":""}>
+      <label for="s_${esc(i.key)}">${esc(i.name)}<span class="from">${i.done?`✓ ${esc(i.doneBy||"someone")}`:`added by ${esc(i.by||"someone")}`}${i.recipe?` · ${esc(i.recipe)}`:""}</span></label>
+      <button class="rm" data-rm="${esc(i.key)}" aria-label="Remove">✕</button></li>`).join("")}</ul>`
+      :`<p style="color:var(--mut);margin:6px 0">Nothing on the list yet. Open a recipe and tap <b>+</b> next to an ingredient, add something below, or tell Siri.</p>`}
+    <div class="addbar"><input id="shopAdd" placeholder="Add an item" autocomplete="off"><button class="btn btn-p" data-act="shop-add">Add</button></div>
+    </div>
+    <p class="hint">${nOpen} to get. This list is shared — anything you add shows up on the other phone right away.</p>
+  </div>`;
+}
+window.applyList=function(obj){
+  shop=Object.keys(obj||{}).map(k=>Object.assign({key:k},obj[k]));
+  LIVE=true; dot(); if(!$("#shop").hidden) renderShop();
+};
+window.listError=function(){ LIVE=false; if(!$("#shop").hidden) renderShop(); };
+function setMe(v){ ME=v; try{ localStorage.setItem("rb_me",v); }catch(e){} renderShop(); }
 function addToShop(texts,from){
-  const have=new Set(shop.map(i=>i.text.toLowerCase()));
-  const add=texts.filter(t=>t&&!have.has(t.toLowerCase())).map(t=>({text:t,done:false,from:from||""}));
+  if(!window.GL){ toast("Still connecting…"); return; }
+  if(!ME){ openShop(); toast("Add your name first"); return; }
+  const have=new Set(shop.map(i=>String(i.name||"").toLowerCase()));
+  const add=texts.filter(t=>t&&!have.has(t.toLowerCase()));
   if(!add.length){ toast("Already on the list"); return; }
-  writeShop(shop.concat(add)); toast(add.length===1?"Added to list":add.length+" items added");
+  add.forEach(t=>window.GL.add({name:t,by:ME,done:false,ts:Date.now(),recipe:from||""}));
+  toast(add.length===1?"Added to list":add.length+" items added");
 }
 
 document.addEventListener("click",e=>{
@@ -309,18 +341,20 @@ document.addEventListener("click",e=>{
   if(t.dataset.tag!==undefined){ const g=t.dataset.tag; activeTags.has(g)?activeTags.delete(g):activeTags.add(g); return render(); }
   if(t.id==="clearTags"){ activeTags.clear(); return render(); }
   if(t.dataset.add!==undefined){ const r=RECIPES.find(x=>x.id===openId); return addToShop([t.dataset.add],r&&r.title); }
-  if(t.dataset.rm!==undefined){ return writeShop(shop.filter((_,n)=>n!==+t.dataset.rm)); }
+  if(t.dataset.rm!==undefined){ if(window.GL) window.GL.remove(t.dataset.rm); return; }
   const a=t.dataset.act; if(!a) return;
   if(a==="close-cook") return closeCook();
   if(a==="close-shop") return closeShop();
   if(a==="add-all"){ const r=RECIPES.find(x=>x.id===openId); const c=(r.components||[]).flatMap(x=>x.ingredients||[]); return addToShop(c.concat(r.ingredients||[]),r.title); }
   if(a==="shop-add"){ const v=$("#shopAdd").value.trim(); if(v){ addToShop([v],""); } return; }
-  if(a==="clear-done") return writeShop(shop.filter(i=>!i.done));
+  if(a==="clear-done"){ if(window.GL) shop.filter(i=>i.done).forEach(i=>window.GL.remove(i.key)); return; }
+  if(a==="change-me"){ setMe(""); return; }
+  if(a==="me-save"){ const v=($("#meAdd").value||"").trim().slice(0,30); if(v) setMe(v); return; }
 });
 document.addEventListener("change",e=>{
   const t=e.target;
   if(t.id==="sort"){ sortBy=t.value; return render(); }
-  if(t.dataset.idx!==undefined) return writeShop(shop.map((i,n)=>n===+t.dataset.idx?{...i,done:t.checked}:i));
+  if(t.dataset.key!==undefined){ if(window.GL) window.GL.setDone(t.dataset.key, t.checked, ME||"someone"); return; }
   if(t.dataset.ing!==undefined && openId){
     const done=[...document.querySelectorAll("#cook .ing input:checked")].map(i=>+i.dataset.ing);
     save("rb_ing_"+openId,done);
@@ -329,7 +363,8 @@ document.addEventListener("change",e=>{
 document.addEventListener("input",e=>{ if(e.target.id==="q"){ query=e.target.value; render(); } });
 document.addEventListener("keydown",e=>{
   if(e.key==="Escape"){ if(!$("#shop").hidden) closeShop(); else if(!$("#cook").hidden) closeCook(); }
-  if(e.key==="Enter"&&e.target.id==="shopAdd"){ e.preventDefault(); const v=e.target.value.trim(); if(v) addToShop([v],""); }
+  if(e.key==="Enter"&&e.target.id==="shopAdd"){ e.preventDefault(); const v=e.target.value.trim(); if(v){ addToShop([v],""); } }
+  if(e.key==="Enter"&&e.target.id==="meAdd"){ e.preventDefault(); const v=e.target.value.trim().slice(0,30); if(v) setMe(v); }
 });
 document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"&&openId&&!wakeLock) requestWake(); });
 
@@ -338,7 +373,7 @@ $("#grid").innerHTML='<div class="loading" style="grid-column:1/-1">Loading reci
 fetch("recipes.json?v="+Date.now())
   .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
   .then(data=>{ RECIPES=data; SNAPSHOT=new Date().toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"}); render(); })
-  .catch(()=>{ RECIPES=BAKED; render(); $("#foot").innerHTML="Couldn't reach the live recipe list, so this is the copy saved with the page."; });
+  .catch(()=>{ RECIPES=BAKED; render(); $("#foot").innerHTML="Couldn't reach the recipe list. Reconnect and pull down to refresh."; });
 
 function paintOnline(){ document.body.classList.toggle("is-offline", !navigator.onLine); }
 window.addEventListener("online", paintOnline);
@@ -348,6 +383,20 @@ paintOnline();
 if("serviceWorker" in navigator){
   window.addEventListener("load",()=>{ navigator.serviceWorker.register("sw.js").catch(()=>{}); });
 }
+</script>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+import { getDatabase, ref, onValue, push, update, remove } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-database.js";
+const app = initializeApp({ databaseURL: "https://recipe-box-list-default-rtdb.firebaseio.com" });
+const db = getDatabase(app);
+const listRef = ref(db, "list");
+window.GL = {
+  add(item){ push(listRef, item); },
+  setDone(key, done, by){ update(ref(db, "list/" + key), done ? { done:true, doneBy: by||"someone" } : { done:false, doneBy:"" }); },
+  remove(key){ remove(ref(db, "list/" + key)); }
+};
+onValue(listRef, snap => window.applyList(snap.val()), () => window.listError());
 </script>
 </body>
 </html>
