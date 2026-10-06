@@ -320,7 +320,22 @@ function renderShop(){
 window.applyList=function(obj){
   shop=Object.keys(obj||{}).map(k=>Object.assign({key:k},obj[k]));
   LIVE=true; dot(); if(!$("#shop").hidden) renderShop();
+  maybeSplit(obj);
 };
+function maybeSplit(obj){
+  if(!window.GL) return;
+  Object.keys(obj||{}).forEach(k=>{
+    const v=obj[k]||{};
+    if(v.ts||v.recipe||v.done) return;
+    const parts=splitItems(v.name||"");
+    if(parts.length<2) return;
+    setTimeout(()=>{
+      if(!shop.some(i=>i.key===k)) return;
+      parts.forEach((p,n)=>window.GL.add({name:p,by:v.by||"someone",done:false,ts:Date.now()+n,recipe:""}));
+      window.GL.remove(k);
+    }, 400+Math.floor(Math.random()*1400));
+  });
+}
 window.listError=function(){ LIVE=false; if(!$("#shop").hidden) renderShop(); };
 function setMe(v){ ME=v; try{ localStorage.setItem("rb_me",v); }catch(e){} renderShop(); }
 function splitItems(v){ return String(v).split(/\s*,\s*|\s+and\s+/i).map(x=>x.trim()).filter(Boolean); }
