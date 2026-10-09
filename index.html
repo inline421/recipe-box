@@ -385,6 +385,10 @@ document.addEventListener("keydown",e=>{
 document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"&&openId&&!wakeLock) requestWake(); });
 
 dot();
+if(/(^|[?&#])list\b/.test(location.search+location.hash)){
+  openShop();
+  setTimeout(()=>{ const el=$("#shopAdd"); if(el){ try{ el.focus(); }catch(e){} } },150);
+}
 $("#grid").innerHTML='<div class="loading" style="grid-column:1/-1">Loading recipes…</div>';
 fetch("recipes.json?v="+Date.now())
   .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
