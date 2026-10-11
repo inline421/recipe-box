@@ -1,5 +1,5 @@
 // Recipe Box service worker - app shell cached, recipes refreshed when online.
-const SHELL = 'rb-shell-v2';
+const SHELL = 'rb-shell-v3';
 const DATA  = 'rb-data-v1';
 const LIB   = 'rb-lib-v1';
 const SHELL_FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
@@ -34,14 +34,15 @@ self.addEventListener('fetch', e => {
 
   if (url.origin !== location.origin) return;
 
-  // recipes.json: network first so new recipes show up, fall back to last good copy
-  if (url.pathname.endsWith('recipes.json')) {
+  // recipe data: network first so new recipes show up, fall back to last good copy
+  if (/recipes[a-z-]*\.json$/.test(url.pathname)) {
+    const key = url.pathname;
     e.respondWith(
       fetch(req).then(res => {
         const copy = res.clone();
-        caches.open(DATA).then(c => c.put('recipes.json', copy));
+        caches.open(DATA).then(c => c.put(key, copy));
         return res;
-      }).catch(() => caches.open(DATA).then(c => c.match('recipes.json')))
+      }).catch(() => caches.open(DATA).then(c => c.match(key)))
     );
     return;
   }
