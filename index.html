@@ -390,9 +390,16 @@ if(/(^|[?&#])list\b/.test(location.search+location.hash)){
   setTimeout(()=>{ const el=$("#shopAdd"); if(el){ try{ el.focus(); }catch(e){} } },150);
 }
 $("#grid").innerHTML='<div class="loading" style="grid-column:1/-1">Loading recipes…</div>';
-fetch("recipes.json?v="+Date.now())
-  .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(data=>{ RECIPES=data; SNAPSHOT=new Date().toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"}); render(); })
+const bust="?v="+Date.now();
+const grab=u=>fetch(u+bust).then(r=>r.ok?r.json():[]).catch(()=>[]);
+Promise.all([grab("recipes.json"),grab("recipes-extra.json")])
+  .then(([a,b])=>{
+    const all=(b||[]).concat(a||[]);
+    if(!all.length) throw new Error("empty");
+    const seen=new Set(); RECIPES=[];
+    all.forEach(r=>{ if(r&&r.id&&!seen.has(r.id)){ seen.add(r.id); RECIPES.push(r); } });
+    SNAPSHOT=new Date().toLocaleDateString("en-US",{month:"long",day:"numeric",year:"numeric"}); render();
+  })
   .catch(()=>{ RECIPES=BAKED; render(); $("#foot").innerHTML="Couldn't reach the recipe list. Reconnect and pull down to refresh."; });
 
 function paintOnline(){ document.body.classList.toggle("is-offline", !navigator.onLine); }
