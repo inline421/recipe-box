@@ -45,47 +45,5 @@
   "rating": 0,
   "createdAt": "2026-10-12T12:00:00.000Z",
   "updatedAt": "2026-10-12T12:00:00.000Z"
- },
- {
-  "id": "buttermilk-pancakes",
-  "kind": "food",
-  "title": "Buttermilk Pancakes (Half / Full / 2x)",
-  "totalTime": "25 min",
-  "servings": "2 (half) · 4 (full) · 8 (2x)",
-  "tags": [
-   "breakfast",
-   "pancakes",
-   "weekend",
-   "kid friendly"
-  ],
-  "source": "House recipe",
-  "url": "",
-  "ingredients": [
-   "AMOUNTS BELOW READ: HALF | FULL | 2x",
-   "All-purpose flour - 1 cup | 2 cups | 4 cups",
-   "Sugar - 1 Tbsp | 2 Tbsp | 1/4 cup",
-   "Baking powder - 1 tsp | 2 tsp | 4 tsp",
-   "Baking soda - 1/2 tsp | 1 tsp | 2 tsp",
-   "Kosher salt - 1/2 tsp | 1 tsp | 2 tsp",
-   "Buttermilk - 1 cup | 2 cups | 4 cups",
-   "Large eggs - 1 | 2 | 4",
-   "Butter, melted and cooled - 2 Tbsp | 4 Tbsp | 1 stick (8 Tbsp)",
-   "Vanilla extract - 1/2 tsp | 1 tsp | 2 tsp",
-   "Butter or neutral oil for the pan"
-  ],
-  "steps": [
-   "Whisk the dry ingredients together in a large bowl: flour, sugar, baking powder, baking soda, salt.",
-   "In a second bowl whisk the buttermilk, eggs, melted butter and vanilla until smooth.",
-   "Pour the wet into the dry and stir with a fork just until no dry flour remains. Lumps are correct - do not beat it smooth.",
-   "Rest the batter 10 min while the pan heats. It will thicken and puff slightly.",
-   "Heat a nonstick skillet or griddle over medium. Film with butter or oil and wipe off the excess.",
-   "Scoop 1/4 cup per pancake. Cook until bubbles form across the surface and the edges look dry, 2-3 min.",
-   "Flip once and cook 1-2 min more, until the second side is golden and the center springs back.",
-   "Hold finished pancakes on a rack in a 200F oven; stacking on a plate steams them soft."
-  ],
-  "notes": "HALF makes about 6 four-inch pancakes (2 people). FULL makes about 12 (4 people). 2x makes about 24 - use two pans or a griddle, and expect to re-butter every other batch. No buttermilk: per 1 cup milk, stir in 1 Tbsp lemon juice or white vinegar and let sit 10 min. Batter keeps covered in the fridge 1 day; it loses some lift, so add a pinch more baking powder when you use it. Cooked pancakes freeze well - cool flat, freeze on a sheet, then bag; reheat in the toaster.",
-  "rating": 0,
-  "createdAt": "2026-10-11T12:00:00.000Z",
-  "updatedAt": "2026-10-11T12:00:00.000Z"
  }
 ]
