@@ -1,5 +1,52 @@
 [
  {
+  "id": "thai-green-curry-lentil-soup",
+  "kind": "food",
+  "title": "Thai Green Curry Lentil Soup",
+  "totalTime": "30 min (20 min active)",
+  "servings": "4",
+  "tags": [
+   "thai",
+   "soup",
+   "lentils",
+   "weeknight",
+   "one pot",
+   "vegetarian option"
+  ],
+  "source": "Food & Wine",
+  "url": "https://www.foodandwine.com/thai-green-curry-lentil-soup-12149243",
+  "ingredients": [
+   "3 Tbsp neutral oil (canola or vegetable)",
+   "1 (4-oz) package sliced mixed mushrooms (cremini, oyster, shiitake)",
+   "1 (1-inch) piece fresh ginger, peeled and finely chopped (about 2 Tbsp)",
+   "2 large garlic cloves, finely chopped (about 1 Tbsp)",
+   "1 bunch scallions, dark greens separated from white and light green, thinly sliced",
+   "1/4 cup green curry paste (Maesri or similar)",
+   "1 1/2 cups chicken or vegetable broth",
+   "2 cups peeled butternut squash, 1/2-inch chop (about 12 oz)",
+   "1 (13.66-oz) can full-fat coconut milk, divided",
+   "1 bunch fresh cilantro with tender stems, coarsely chopped, plus more to garnish",
+   "2 tsp white miso (optional)",
+   "1 (8-oz) package microwaveable black lentils",
+   "1 tsp fish sauce (Red Boat or similar)",
+   "3/4 tsp kosher salt",
+   "Lime wedges, to serve",
+   "Thinly sliced Fresno chile, to garnish"
+  ],
+  "steps": [
+   "Heat the oil in a medium Dutch oven over medium-high until shimmering. Add the mushrooms in a single layer and leave them alone until browned on one side, 3-4 min. Stir and keep cooking until tender, about 2 min more.",
+   "Add the ginger, garlic, and the white and light green scallion, stirring constantly until fragrant, about 1 min. Stir in the curry paste and cook, stirring, 1 min more - blooming it in the oil is what deepens the broth.",
+   "Add the broth and squash. Bring to a boil, then drop to medium-low, cover, and simmer until the squash is tender, 10-12 min.",
+   "While it simmers: set aside 1/4 cup of the coconut milk for drizzling. Put the rest in a blender with the cilantro, miso and scallion greens. Blend smooth, about 30 seconds.",
+   "Stir the lentils into the pot, breaking up any clumps. Add the fish sauce, salt, and the blended coconut mixture. Cook over medium, stirring often, just until warmed through, about 2 min - no longer, or the green fades.",
+   "Ladle into bowls, drizzle with the reserved coconut milk, and top with Fresno chile and more cilantro. Lime wedges at the table."
+  ],
+  "notes": "Lentil swaps: cooked French green lentils are closest - they hold their shape like black lentils. Brown or green work but go softer. Skip red lentils, they dissolve. Frozen butternut is fine straight from frozen; it softens faster and releases water, so start checking early. Mushrooms: spread them out and do not stir for the first few minutes or they steam instead of browning. Green curry pastes vary a lot in heat and salt - taste before the final seasoning. Vegetarian: use vegetable broth and skip the fish sauce (add a little extra miso or salt). Serve as-is, or over steamed jasmine rice for a bigger dinner.",
+  "rating": 0,
+  "createdAt": "2026-10-12T12:00:00.000Z",
+  "updatedAt": "2026-10-12T12:00:00.000Z"
+ },
+ {
   "id": "buttermilk-pancakes",
   "kind": "food",
   "title": "Buttermilk Pancakes (Half / Full / 2x)",
