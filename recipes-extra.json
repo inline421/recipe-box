@@ -1,5 +1,55 @@
 [
  {
+  "id": "quick-chicken-laksa",
+  "kind": "food",
+  "title": "Quick Chicken Laksa",
+  "totalTime": "45 min (under 30 min prep, 10-30 min cook)",
+  "servings": "2",
+  "tags": [
+   "malaysian",
+   "soup",
+   "noodles",
+   "chicken",
+   "weeknight",
+   "dairy free"
+  ],
+  "source": "BBC Food - Justin Tsang (@justin_the_dustbin)",
+  "url": "https://www.bbc.co.uk/food/recipes/quick_chicken_laksa_27176",
+  "ingredients": [
+   "FOR THE BOWLS",
+   "2 free-range eggs",
+   "200 g (7 oz) dried vermicelli noodles",
+   "FOR THE SOUP",
+   "1 Tbsp vegetable oil",
+   "3-4 Tbsp shop-bought laksa paste (or red curry paste)",
+   "200 ml (7 fl oz) chicken stock",
+   "1 (400 ml) tin coconut milk",
+   "1 Tbsp fish sauce",
+   "1 tsp light brown sugar",
+   "1 large chicken breast (or 2 small)",
+   "TO GARNISH",
+   "1/4 cucumber, cut into very thin matchsticks",
+   "Handful fresh mint leaves, chopped",
+   "Handful fresh coriander (cilantro) leaves, chopped",
+   "1 Thai red chilli, halved",
+   "1 lime, cut into wedges"
+  ],
+  "steps": [
+   "Boil a large saucepan of water. Cook the eggs 6 min, then drop them into cold water and leave until needed.",
+   "Heat the oil in a saucepan over medium-high. Fry the laksa paste 2-3 min, until the oil turns reddish - that colour change is the cue it has bloomed.",
+   "Stir in the chicken stock, coconut milk, fish sauce and sugar. Cover and bring to the boil.",
+   "Add the chicken breast, re-cover, drop to medium and cook 10-12 min, until cooked through.",
+   "Meanwhile put the vermicelli in a large heatproof bowl, pour over 1 litre of just-boiled water to cover, and leave to soak while the chicken cooks. Drain just before serving.",
+   "Lift the chicken out to a plate and keep the soup warm over low heat. Let the chicken cool enough to handle, then shred it into chunks with forks or your hands.",
+   "Divide the drained noodles between two bowls, top with the shredded chicken, and ladle over enough soup to just cover the noodles.",
+   "Peel and halve the eggs and add to the bowls. Garnish with cucumber, mint, coriander and chilli; serve with lime wedges."
+  ],
+  "notes": "From the BBC Food reel (@bbcfood) - Justin Tsang's shortcut on a dish that traditionally takes hours. The shop-bought paste is doing the heavy lifting, so the brand matters: laksa paste is the real thing, red curry paste is the fallback. 6-minute eggs give a jammy yolk; add a minute if you want them firmer. Pour the soup over the noodles only to cover - drowning them makes it watery. About 900 kcal per serving as written; use light coconut milk to cut it back.",
+  "rating": 0,
+  "createdAt": "2026-10-12T18:00:00.000Z",
+  "updatedAt": "2026-10-12T18:00:00.000Z"
+ },
+ {
   "id": "thai-green-curry-lentil-soup",
   "kind": "food",
   "title": "Thai Green Curry Lentil Soup",
