@@ -1,5 +1,43 @@
 [
  {
+  "id": "lemony-miso-cabbage",
+  "kind": "food",
+  "title": "Lemony Miso Cabbage",
+  "totalTime": "15 min (5 min prep, 10 min cook)",
+  "servings": "4",
+  "tags": [
+   "side",
+   "cabbage",
+   "vegetarian",
+   "one pan",
+   "quick",
+   "weeknight"
+  ],
+  "source": "NYT Cooking",
+  "url": "https://cooking.nytimes.com/recipes/776271001-lemony-miso-cabbage",
+  "ingredients": [
+   "1 Tbsp white miso",
+   "1/4 cup water",
+   "2 Tbsp unsalted butter",
+   "1 lb green cabbage, chopped into 1-inch pieces, layers separated (about 6 cups)",
+   "Salt and pepper",
+   "1 Tbsp lemon juice",
+   "2 Tbsp chopped fresh dill"
+  ],
+  "steps": [
+   "Whisk the miso with 1/4 cup water in a small bowl, mashing until it fully dissolves.",
+   "Melt the butter in a 12-inch nonstick skillet (one with a lid) over medium-high. Add the cabbage, season with salt and pepper, and stir to coat in the butter, about 1 min.",
+   "Drizzle the miso mixture over the top and stir it through. Cover and cook until the cabbage is just softened, about 2 min.",
+   "Uncover, mix well, then spread the cabbage into an even layer. Leave it undisturbed until the liquid has cooked off and the underside is lightly golden, about 2 min - this is where the sweetness comes from.",
+   "Turn off the heat. Add the lemon juice and dill and mix, scraping up any browned bits. Taste and season again with salt and pepper.",
+   "Transfer to a shallow bowl. Good warm or at room temperature."
+  ],
+  "notes": "Butter + miso makes a silky savory sauce that carries the cabbage; the lemon and dill at the end cut the richness. Steam first, then caramelize - do not stir during the browning step or it just steams. Side dish for pan-roasted chicken, fish or steak, and good over rice or noodles. Five ingredients, one pan, about 15 minutes.",
+  "rating": 0,
+  "createdAt": "2026-10-12T20:00:00.000Z",
+  "updatedAt": "2026-10-12T20:00:00.000Z"
+ },
+ {
   "id": "quick-chicken-laksa",
   "kind": "food",
   "title": "Quick Chicken Laksa",
