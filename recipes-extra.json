@@ -5,14 +5,7 @@
   "title": "Lemony Miso Cabbage",
   "totalTime": "15 min (5 min prep, 10 min cook)",
   "servings": "4",
-  "tags": [
-   "side",
-   "cabbage",
-   "vegetarian",
-   "one pan",
-   "quick",
-   "weeknight"
-  ],
+  "tags": ["side", "cabbage", "vegetarian", "one pan", "quick", "weeknight"],
   "source": "NYT Cooking",
   "url": "https://cooking.nytimes.com/recipes/776271001-lemony-miso-cabbage",
   "ingredients": [
@@ -43,14 +36,7 @@
   "title": "Quick Chicken Laksa",
   "totalTime": "45 min (under 30 min prep, 10-30 min cook)",
   "servings": "2",
-  "tags": [
-   "malaysian",
-   "soup",
-   "noodles",
-   "chicken",
-   "weeknight",
-   "dairy free"
-  ],
+  "tags": ["malaysian", "soup", "noodles", "chicken", "weeknight", "dairy free"],
   "source": "BBC Food - Justin Tsang (@justin_the_dustbin)",
   "url": "https://www.bbc.co.uk/food/recipes/quick_chicken_laksa_27176",
   "ingredients": [
@@ -91,18 +77,28 @@
   "id": "thai-green-curry-lentil-soup",
   "kind": "food",
   "title": "Thai Green Curry Lentil Soup",
-  "totalTime": "30 min (20 min active)",
+  "totalTime": "30 min (45 min with dry lentils)",
   "servings": "4",
-  "tags": [
-   "thai",
-   "soup",
-   "lentils",
-   "weeknight",
-   "one pot",
-   "vegetarian option"
-  ],
+  "tags": ["thai", "soup", "lentils", "weeknight", "one pot", "vegetarian option"],
   "source": "Food & Wine",
   "url": "https://www.foodandwine.com/thai-green-curry-lentil-soup-12149243",
+  "components": [
+   {
+    "name": "Pardina lentils from dry",
+    "why": "Swap for the 8-oz pouch of pre-cooked black lentils. 2/3 cup dry = about 1 1/2 cups cooked, which is what the pouch holds. Pardina are small Spanish brown lentils that hold their shape like black or French green - the right kind for this soup.",
+    "ingredients": [
+     "2/3 cup dry pardina lentils, rinsed and picked over",
+     "2 cups water or broth",
+     "1/2 tsp kosher salt (add after they soften)"
+    ],
+    "steps": [
+     "Rinse the lentils and bring them to a boil with 2 cups water or broth in a small saucepan. No soaking needed.",
+     "Drop to a low simmer, partly covered, and cook 20-25 min, until tender but still holding their shape. Start tasting at 18 min - pardina go from firm to mushy faster than you expect.",
+     "Salt them in the last 5 min, then drain well. Dry lentils soak up a lot of liquid, so draining matters or the soup thins out.",
+     "Start these first - they can simmer while you do everything else, and they are fine sitting drained until step 5."
+    ]
+   }
+  ],
   "ingredients": [
    "3 Tbsp neutral oil (canola or vegetable)",
    "1 (4-oz) package sliced mixed mushrooms (cremini, oyster, shiitake)",
@@ -115,23 +111,25 @@
    "1 (13.66-oz) can full-fat coconut milk, divided",
    "1 bunch fresh cilantro with tender stems, coarsely chopped, plus more to garnish",
    "2 tsp white miso (optional)",
-   "1 (8-oz) package microwaveable black lentils",
+   "2/3 cup dry pardina lentils, cooked and drained (see panel) - or 1 (8-oz) package microwaveable black lentils",
    "1 tsp fish sauce (Red Boat or similar)",
    "3/4 tsp kosher salt",
    "Lime wedges, to serve",
    "Thinly sliced Fresno chile, to garnish"
   ],
   "steps": [
+   "If using dry pardina lentils, start them simmering now (see the panel) - they need 20-25 min and everything else takes about that long.",
    "Heat the oil in a medium Dutch oven over medium-high until shimmering. Add the mushrooms in a single layer and leave them alone until browned on one side, 3-4 min. Stir and keep cooking until tender, about 2 min more.",
    "Add the ginger, garlic, and the white and light green scallion, stirring constantly until fragrant, about 1 min. Stir in the curry paste and cook, stirring, 1 min more - blooming it in the oil is what deepens the broth.",
    "Add the broth and squash. Bring to a boil, then drop to medium-low, cover, and simmer until the squash is tender, 10-12 min.",
    "While it simmers: set aside 1/4 cup of the coconut milk for drizzling. Put the rest in a blender with the cilantro, miso and scallion greens. Blend smooth, about 30 seconds.",
-   "Stir the lentils into the pot, breaking up any clumps. Add the fish sauce, salt, and the blended coconut mixture. Cook over medium, stirring often, just until warmed through, about 2 min - no longer, or the green fades.",
+   "Stir the cooked, drained lentils into the pot, breaking up any clumps. Add the fish sauce, salt, and the blended coconut mixture. Cook over medium, stirring often, just until warmed through, about 2 min - no longer, or the green fades.",
+   "Taste for salt. Dry lentils cooked in plain water absorb seasoning from the broth, so it often needs a bit more salt than the pouch version.",
    "Ladle into bowls, drizzle with the reserved coconut milk, and top with Fresno chile and more cilantro. Lime wedges at the table."
   ],
-  "notes": "Lentil swaps: cooked French green lentils are closest - they hold their shape like black lentils. Brown or green work but go softer. Skip red lentils, they dissolve. Frozen butternut is fine straight from frozen; it softens faster and releases water, so start checking early. Mushrooms: spread them out and do not stir for the first few minutes or they steam instead of browning. Green curry pastes vary a lot in heat and salt - taste before the final seasoning. Vegetarian: use vegetable broth and skip the fish sauce (add a little extra miso or salt). Serve as-is, or over steamed jasmine rice for a bigger dinner.",
+  "notes": "DRY PARDINA VERSION: 2/3 cup dry = the 8-oz pouch. Simmer 20-25 min in 2 cups water or broth, salt at the end, drain well, then add at step 6. Adds about 15 min to the recipe but no extra hands-on time if you start them first. Cooking them in broth instead of water gives a better-seasoned soup. One-pot alternative: add the rinsed dry lentils with the broth, simmer 10 min, THEN add the squash and continue - the squash only needs 10-12 min and would turn to mush over the full lentil time; bump the broth to 2 1/2 cups since the lentils drink it. Other lentils: French green or beluga behave the same. Brown or green work but go softer. Skip red lentils, they dissolve. Frozen butternut is fine straight from frozen; it softens faster and releases water, so start checking early. Mushrooms: spread them out and do not stir for the first few minutes or they steam instead of browning. Green curry pastes vary a lot in heat and salt - taste before the final seasoning. Vegetarian: use vegetable broth and skip the fish sauce (add a little extra miso or salt). Serve as-is, or over steamed jasmine rice for a bigger dinner.",
   "rating": 0,
   "createdAt": "2026-10-12T12:00:00.000Z",
-  "updatedAt": "2026-10-12T12:00:00.000Z"
+  "updatedAt": "2026-10-14T12:00:00.000Z"
  }
 ]
