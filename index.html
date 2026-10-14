@@ -86,6 +86,9 @@ body.is-offline .offline{display:block}
 .chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 11px;font-size:12.5px;color:var(--ink-2)}
 .chip[aria-pressed="true"]{background:var(--acc-soft);border-color:var(--acc);color:var(--acc);font-weight:600}
 .spacer{flex:1}
+.catrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-right:4px}
+.cchip{border:1px solid var(--line-2);background:var(--surface);border-radius:999px;padding:4px 12px;font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.cchip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 select.sort{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 10px;font-size:12.5px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;align-items:start}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:15px 16px 13px;text-align:left;display:flex;flex-direction:column;gap:9px;box-shadow:var(--shadow);transition:transform .12s ease,border-color .12s ease;width:100%}
@@ -179,7 +182,7 @@ let SNAPSHOT = "September 24, 2026";
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-let query="", kind="all", activeTags=new Set(), sortBy="recent", openId=null, wakeLock=null;
+let query="", kind="all", cat="all", activeTags=new Set(), sortBy="recent", openId=null, wakeLock=null;
 let shop = [];
 let ME = (function(){ try{ return localStorage.getItem("rb_me")||""; }catch(e){ return ""; } })();
 let LIVE = false;
@@ -190,14 +193,32 @@ function save(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} 
 function toast(m){ document.querySelectorAll(".toast").forEach(t=>t.remove());
   const d=document.createElement("div"); d.className="toast"; d.textContent=m; document.body.appendChild(d); setTimeout(()=>d.remove(),2000); }
 
+const CATS=[["pork","Pork"],["chicken","Chicken"],["beef","Beef"],["seafood","Seafood"],["meatless","Meatless"],["soup","Soup"]];
+const MEAT_RE=/\b(chicken|pork|bacon|pancetta|prosciutto|chorizo|ham\b|beef|steak|brisket|veal|lamb|turkey|sausage|anchov|fish sauce|shrimp|prawn|salmon|tuna|crab|scallop|squid|octopus)/i;
+function catsOf(r){
+  const tags=(r.tags||[]).join(" ").toLowerCase();
+  let ing=(r.ingredients||[]).concat((r.components||[]).flatMap(c=>c.ingredients||[])).join(" ").toLowerCase();
+  const txt=(ing+" "+(r.title||"").toLowerCase()+" "+tags);
+  ing=ing.replace(/\([^)]*\)/g," ").replace(/(chicken|beef|vegetable)\s+or\s+(chicken|beef|vegetable)\s+(broth|stock)/g," broth ");
+  const out=new Set();
+  if(/\bpork\b|bacon|pancetta|prosciutto|chorizo|\bham\b/.test(ing)) out.add("pork");
+  if(/chicken/.test(ing)) out.add("chicken");
+  if(/\bbeef\b|steak|brisket|short rib/.test(ing)) out.add("beef");
+  if(/shrimp|prawn|salmon|tuna|crab|scallop|squid|octopus|anchov|white fish|sea bass/.test(ing)) out.add("seafood");
+  if(!MEAT_RE.test(ing) || /vegetarian|vegan|meatless/.test(tags)) out.add("meatless");
+  if(/\bsoup\b|\blaksa\b|\bstew\b|\bchili\b|\bchowder\b/.test(txt)) out.add("soup");
+  return out;
+}
+function inCat(r){ return cat==="all" || catsOf(r).has(cat); }
 function isDrink(r){ return (r.kind||"food")==="drink"; }
 function inKind(r){ return kind==="all" || (kind==="drink")===isDrink(r); }
-function allTags(){ const s=new Set(); RECIPES.filter(inKind).forEach(r=>(r.tags||[]).forEach(t=>s.add(t))); return [...s].sort(); }
+function allTags(){ const s=new Set(); RECIPES.filter(r=>inKind(r)&&inCat(r)).forEach(r=>(r.tags||[]).forEach(t=>s.add(t))); return [...s].sort(); }
 
 function visible(){
   const q=query.trim().toLowerCase();
   let out=RECIPES.filter(r=>{
     if(!inKind(r)) return false;
+    if(!inCat(r)) return false;
     if(activeTags.size && ![...activeTags].every(t=>(r.tags||[]).includes(t))) return false;
     if(!q) return true;
     return [r.title,r.source,(r.tags||[]).join(" "),(r.ingredients||[]).join(" "),r.notes].join(" ").toLowerCase().includes(q);
@@ -218,7 +239,11 @@ function render(){
       <button data-kind="food" aria-pressed="${kind==='food'}">Food${nF?" "+nF:""}</button>
       <button data-kind="drink" aria-pressed="${kind==='drink'}">Drinks${nD?" "+nD:""}</button>
     </div>`;
-  $("#bar").innerHTML = seg + (tags.length?tags.map(t=>`<button class="chip" aria-pressed="${activeTags.has(t)}" data-tag="${esc(t)}">${esc(t)}</button>`).join("")
+  const pool=RECIPES.filter(inKind);
+  const catSeg=`<div class="catrow"><button class="cchip" aria-pressed="${cat==='all'}" data-cat="all">All</button>`+
+    CATS.map(([k,label])=>{ const n=pool.filter(r=>catsOf(r).has(k)).length;
+      return n?`<button class="cchip" aria-pressed="${cat===k}" data-cat="${k}">${label} ${n}</button>`:""; }).join("")+`</div>`;
+  $("#bar").innerHTML = seg + catSeg + (tags.length?tags.map(t=>`<button class="chip" aria-pressed="${activeTags.has(t)}" data-tag="${esc(t)}">${esc(t)}</button>`).join("")
     + (activeTags.size?`<button class="btn-q" id="clearTags">clear</button>`:""):"")
     + `<span class="spacer"></span>`
     + `<select class="sort" id="sort" aria-label="Sort recipes"><option value="recent">Recently added</option><option value="az">A–Z</option><option value="quick">Quickest first</option></select>`;
@@ -360,7 +385,8 @@ document.addEventListener("click",e=>{
   const t=e.target, card=t.closest("[data-open]");
   if(card) return openCook(card.dataset.open);
   if(t.id==="shopBtn") return openShop();
-  if(t.dataset.kind!==undefined){ kind=t.dataset.kind; activeTags.clear(); return render(); }
+  if(t.dataset.kind!==undefined){ kind=t.dataset.kind; cat="all"; activeTags.clear(); return render(); }
+  if(t.dataset.cat!==undefined){ cat=t.dataset.cat; activeTags.clear(); return render(); }
   if(t.dataset.tag!==undefined){ const g=t.dataset.tag; activeTags.has(g)?activeTags.delete(g):activeTags.add(g); return render(); }
   if(t.id==="clearTags"){ activeTags.clear(); return render(); }
   if(t.dataset.add!==undefined){ const r=RECIPES.find(x=>x.id===openId); return addToShop([t.dataset.add],r&&r.title); }
@@ -399,9 +425,9 @@ if(/(^|[?&#])list\b/.test(location.search+location.hash)){
 $("#grid").innerHTML='<div class="loading" style="grid-column:1/-1">Loading recipes…</div>';
 const bust="?v="+Date.now();
 const grab=u=>fetch(u+bust).then(r=>r.ok?r.json():[]).catch(()=>[]);
-Promise.all([grab("recipes.json"),grab("recipes-extra.json")])
-  .then(([a,b])=>{
-    const all=(b||[]).concat(a||[]);
+Promise.all([grab("recipes.json"),grab("recipes-extra.json"),grab("recipes-new.json")])
+  .then(([a,b,c])=>{
+    const all=(c||[]).concat(b||[],a||[]);
     if(!all.length) throw new Error("empty");
     const seen=new Set(); RECIPES=[];
     all.forEach(r=>{ if(r&&r.id&&!seen.has(r.id)){ seen.add(r.id); RECIPES.push(r); } });
