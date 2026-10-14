@@ -134,6 +134,9 @@ ol.steps li::before{content:counter(s);position:absolute;left:0;top:11px;width:2
 .sync{margin-left:auto;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--mut)}
 .sync.on{color:var(--acc);font-weight:700}
 .hint{color:var(--mut);font-size:12.5px;margin:12px 2px 0}
+.vid-btn{display:inline-flex;align-items:center;gap:6px;background:var(--heat);color:#fff;border:1px solid var(--heat);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap}
+.vid-btn:hover{filter:brightness(1.08)}
+.vid-tag{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--heat);display:inline-flex;align-items:center;gap:4px}
 .from{display:block;font-size:11.5px;color:var(--mut)}
 .rm{border:0;background:transparent;color:var(--mut);font-size:15px;line-height:1;padding:2px 5px}
 .rm:hover{color:var(--heat)}
@@ -225,6 +228,7 @@ function render(){
 function cardHTML(r){
   return `<button class="card" data-open="${esc(r.id)}">
     ${(r.components||[]).length?`<span class="badge">${esc(r.components[0].name)}</span>`:""}
+    ${r.video?`<span class="vid-tag">&#9654; Video</span>`:""}
     <h3>${esc(r.title)}</h3>
     <div class="meta">${r.totalTime?`<span>${esc(r.totalTime)}</span>`:""}${r.servings?`<span>Serves ${esc(r.servings)}</span>`:""}${(r.ingredients||[]).length?`<span>${r.ingredients.length} ingredients</span>`:""}</div>
     ${(r.tags||[]).length?`<div class="tags">${r.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>`:""}
@@ -241,6 +245,7 @@ function openCook(id){
   <div class="sheet-bar">
     <button class="btn" data-act="close-cook">← Box</button>
     <h2>${esc(r.title)}</h2>
+    ${r.video?`<a class="vid-btn" href="${esc(r.video)}" target="_blank" rel="noopener">&#9654; Video</a>`:""}
     <button class="btn btn-p" data-act="add-all">Add all to list</button>
   </div>
   <div class="sheet-in">
