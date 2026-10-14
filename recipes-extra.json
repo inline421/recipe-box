@@ -1,5 +1,85 @@
 [
  {
+  "id": "japanese-curry-chicken-potpie",
+  "title": "Japanese Curry Chicken Potpie",
+  "kind": "food",
+  "totalTime": "1 hr 20 min (35 min active)",
+  "servings": "4-6",
+  "tags": ["japanese", "chicken", "comfort food", "one skillet", "weeknight"],
+  "source": "Food & Wine",
+  "url": "https://www.foodandwine.com/japanese-curry-chicken-pot-pie-8759241",
+  "video": "https://content.jwplatform.com/videos/JDz09zvx-eFraYBD7.mp4",
+  "ingredients": [
+   "2 Tbsp neutral cooking oil",
+   "1/2 cup chopped yellow onion (1/2-inch pieces)",
+   "1 1/4 cups chopped peeled carrots (1/2-inch)",
+   "1 1/4 cups chopped unpeeled Yukon gold potatoes (1/2-inch)",
+   "4 garlic cloves, minced",
+   "1 tsp grated ginger",
+   "2 2/3 cups unsalted chicken stock",
+   "1 (3.2-oz) package mild Japanese curry mix, cubed (Golden Curry)",
+   "1 Tbsp ketchup",
+   "1/2 tsp kosher salt",
+   "2 cups shredded rotisserie chicken",
+   "1/2 (17.3-oz) package frozen puff pastry, thawed - 1 sheet (Pepperidge Farm)",
+   "1 large egg, beaten"
+  ],
+  "steps": [
+   "Heat the oven to 400F. Heat the oil in a 10-inch cast iron skillet over medium until shimmering. Add onion, carrots and potatoes and cook, stirring frequently, until the carrots and potatoes just start to soften, 4-5 min.",
+   "Stir in the garlic and ginger and cook, stirring constantly, until fragrant, about 1 min.",
+   "Add the stock and bring to a boil over medium-high, stirring occasionally. Reduce to medium-low and simmer, stirring occasionally, until the vegetables are fork tender, 8-10 min.",
+   "Stir in the curry mix, ketchup and salt until dissolved and the mixture thickens, about 2 min. Stir in the chicken until evenly distributed. Remove from heat and keep warm.",
+   "Roll the pastry on a lightly floured surface into a 13-inch square. Lay it over the skillet and trim, leaving a 3/4- to 1-inch overhang. Fold the pastry under itself so the rolled edge is flush with the top of the skillet, then crimp into the side with a fork. It's fine if it doesn't adhere perfectly.",
+   "Brush the top with beaten egg and cut 8 slits (1 1/2-2 inches) to vent.",
+   "Bake until the pastry is golden brown and the filling is bubbly, about 30 min. Let stand 15 min before serving - this is not optional, it needs to set."
+  ],
+  "notes": "Uses a store-bought Japanese curry roux block (Golden Curry, mild) from the international aisle - that's what makes the sauce silky and gravy-thick. Ketchup is the sweetness that makes it read as Japanese curry rather than generic. Rotisserie chicken keeps it a weeknight dish; skip the chicken for a vegetarian version. MAKE AHEAD: filling keeps 3 days in the fridge; loosen with a Tbsp or two of water and reheat gently over medium-low before topping. Bake the pastry fresh - it doesn't survive reheating crisp.",
+  "rating": 0,
+  "createdAt": "2026-10-01T12:00:00.000Z",
+  "updatedAt": "2026-10-14T18:00:00.000Z"
+ },
+ {
+  "id": "red-curry-dumpling-soup",
+  "title": "Red Curry Dumpling Soup",
+  "kind": "food",
+  "totalTime": "40 min",
+  "servings": "4-6",
+  "tags": ["thai", "soup", "weeknight", "one pot"],
+  "source": "Food & Wine",
+  "url": "https://www.foodandwine.com/red-curry-dumpling-soup-11868814",
+  "video": "https://cdn.jwplayer.com/videos/CtbPnEaX-eFraYBD7.mp4",
+  "ingredients": [
+   "2 Tbsp neutral oil (canola)",
+   "2 cups sliced shiitake mushrooms",
+   "1/4 cup finely chopped shallot",
+   "1 Tbsp finely chopped garlic (~3 cloves)",
+   "1 Tbsp finely chopped fresh ginger",
+   "1/2 tsp thinly sliced red Thai chile, plus more to garnish",
+   "1/4 tsp kosher salt",
+   "2 1/2 Tbsp red curry paste",
+   "3 cups reduced-sodium chicken or vegetable broth",
+   "1 (13.5-oz) can unsweetened coconut milk",
+   "2 Tbsp fish sauce",
+   "1 Tbsp lime juice",
+   "2 tsp light brown sugar",
+   "32 frozen mini wontons (pork, chicken or vegetable)",
+   "2 1/2 cups baby bok choy",
+   "Garnish: cilantro, Thai basil, scallions, sliced red chile, crushed peanuts, lime wedges"
+  ],
+  "steps": [
+   "Heat oil in a large saucepan or medium Dutch oven over medium-high. Brown the mushrooms, stirring occasionally, 5-8 min.",
+   "Drop to medium. Add shallot, garlic, ginger, chile and salt; stir often until the shallots soften, 1-2 min.",
+   "Stir in the curry paste and cook, stirring constantly, until slightly darkened and very fragrant, about 1 min.",
+   "Add broth, coconut milk, fish sauce, lime juice and brown sugar. Bring to a simmer over medium-high.",
+   "Add the wontons, return to a simmer, then stir in the bok choy. Reduce to medium and simmer uncovered, stirring occasionally, until the dumplings are cooked through and the bok choy is tender-crisp, 3-5 min.",
+   "Divide among bowls, garnish, and serve immediately."
+  ],
+  "notes": "Swap spinach or napa cabbage for the bok choy; any frozen dumpling works. Chili oil drizzle for extra heat. Leftovers keep 2 days max - dumplings go mushy after that.",
+  "rating": 0,
+  "createdAt": "2026-09-22T12:00:00.000Z",
+  "updatedAt": "2026-10-14T18:00:00.000Z"
+ },
+ {
   "id": "lemony-miso-cabbage",
   "kind": "food",
   "title": "Lemony Miso Cabbage",
@@ -39,6 +119,7 @@
   "tags": ["malaysian", "soup", "noodles", "chicken", "weeknight", "dairy free"],
   "source": "BBC Food - Justin Tsang (@justin_the_dustbin)",
   "url": "https://www.bbc.co.uk/food/recipes/quick_chicken_laksa_27176",
+  "video": "https://www.instagram.com/reel/DeBlLxUNfOq/",
   "ingredients": [
    "FOR THE BOWLS",
    "2 free-range eggs",
@@ -71,7 +152,7 @@
   "notes": "From the BBC Food reel (@bbcfood) - Justin Tsang's shortcut on a dish that traditionally takes hours. The shop-bought paste is doing the heavy lifting, so the brand matters: laksa paste is the real thing, red curry paste is the fallback. 6-minute eggs give a jammy yolk; add a minute if you want them firmer. Pour the soup over the noodles only to cover - drowning them makes it watery. About 900 kcal per serving as written; use light coconut milk to cut it back.",
   "rating": 0,
   "createdAt": "2026-10-12T18:00:00.000Z",
-  "updatedAt": "2026-10-12T18:00:00.000Z"
+  "updatedAt": "2026-10-14T18:00:00.000Z"
  },
  {
   "id": "thai-green-curry-lentil-soup",
