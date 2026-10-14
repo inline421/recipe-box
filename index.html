@@ -136,6 +136,8 @@ ol.steps li::before{content:counter(s);position:absolute;left:0;top:11px;width:2
 .hint{color:var(--mut);font-size:12.5px;margin:12px 2px 0}
 .vid-btn{display:inline-flex;align-items:center;gap:6px;background:var(--heat);color:#fff;border:1px solid var(--heat);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap}
 .vid-btn:hover{filter:brightness(1.08)}
+.vid-none{background:transparent;color:var(--mut);border-color:var(--line-2);font-weight:600;cursor:default}
+.vid-none:hover{filter:none}
 .vid-tag{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--heat);display:inline-flex;align-items:center;gap:4px}
 .from{display:block;font-size:11.5px;color:var(--mut)}
 .rm{border:0;background:transparent;color:var(--mut);font-size:15px;line-height:1;padding:2px 5px}
@@ -245,7 +247,7 @@ function openCook(id){
   <div class="sheet-bar">
     <button class="btn" data-act="close-cook">← Box</button>
     <h2>${esc(r.title)}</h2>
-    ${r.video?`<a class="vid-btn" href="${esc(r.video)}" target="_blank" rel="noopener">&#9654; Video</a>`:""}
+    ${r.video?`<a class="vid-btn" href="${esc(r.video)}" target="_blank" rel="noopener">&#9654; Video</a>`:`<span class="vid-btn vid-none">No video</span>`}
     <button class="btn btn-p" data-act="add-all">Add all to list</button>
   </div>
   <div class="sheet-in">
