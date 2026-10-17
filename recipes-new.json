@@ -1,5 +1,44 @@
 [
  {
+  "id": "slow-cooker-meatballs",
+  "kind": "food",
+  "title": "Slow Cooker Meatballs",
+  "totalTime": "8 hr 10 min (10 min prep)",
+  "servings": "4 (about 10 meatballs) - double it for a crowd",
+  "tags": ["beef", "italian", "slow cooker", "pasta", "make ahead", "freezer"],
+  "source": "Happily Eva After - Eva Amurri",
+  "url": "https://happilyevaafter.com/slow-cooker-meatballs/",
+  "ingredients": [
+   "1 lb ground beef (90% lean)",
+   "1 egg",
+   "3/4 cup Italian seasoned breadcrumbs",
+   "1 small onion, diced",
+   "1 carrot, peeled and diced",
+   "1/2 cup Pecorino Romano or parmesan, grated, plus more to serve",
+   "1 tsp kosher salt (see notes - the original calls for 1/2 Tbsp)",
+   "1 tsp black pepper",
+   "1 (15-oz) can tomato sauce",
+   "1 (15-oz) can diced tomatoes",
+   "1/2 Tbsp dried oregano",
+   "4-8 cloves garlic, peeled and left whole",
+   "Fresh parsley, chopped (optional)",
+   "Spaghetti or other pasta, to serve"
+  ],
+  "steps": [
+   "In a large bowl combine the ground beef, egg, breadcrumbs, diced carrot, diced onion, cheese, salt and pepper. Mix with your hands until evenly combined.",
+   "Roll into golf ball-sized meatballs. The mix looks vegetable-heavy - that is correct, the carrot and onion cook down and keep the meatballs moist.",
+   "Lay the meatballs gently in the bottom of the slow cooker, a second layer if needed.",
+   "Pour both cans (sauce and diced tomatoes) over the top, sprinkle on the oregano, and scatter the whole garlic cloves over that.",
+   "Cover and cook on LOW 6-8 hours. Stir gently with a wooden spoon halfway through.",
+   "Lift the meatballs out with a slotted spoon into a bowl. Taste the sauce and season with salt and pepper.",
+   "Spoon the sauce over pasta, top with the meatballs, and finish with grated cheese and parsley. Serve right away."
+  ],
+  "notes": "SALT: the original calls for 1/2 Tbsp (1 1/2 tsp) and multiple readers found that too salty - 1 tsp is the safer start, and you season the sauce at the end anyway. Breadcrumbs are already seasoned and the cheese is salty. TIMING: 6 hours is usually enough; 8 is the outer edge. Doubling does not change the time. MAKE AHEAD: cook them a day early, refrigerate the whole insert, then put the insert back in the cooker on HIGH a couple of hours before dinner to reheat. SERVING: spaghetti is the default; also good as meatball subs or sliders, or over zucchini noodles. INSTANT POT (reader-tested, not the author): 7 min high pressure, 5 min natural release, then manual release. The printable card on the site leaves out the diced tomatoes - the full post includes them, and so does this version.",
+  "rating": 0,
+  "createdAt": "2026-10-17T15:00:00.000Z",
+  "updatedAt": "2026-10-17T15:00:00.000Z"
+ },
+ {
   "id": "tsingtao-pork-adobo",
   "kind": "food",
   "title": "Marinated Pork Adobo (Tsingtao)",
