@@ -141,6 +141,9 @@ ol.steps li::before{content:counter(s);position:absolute;left:0;top:11px;width:2
 .vid-btn:hover{filter:brightness(1.08)}
 .vid-none{background:transparent;color:var(--mut);border-color:var(--line-2);font-weight:600;cursor:default}
 .vid-none:hover{filter:none}
+.scalerow{display:flex;gap:6px;margin:0 0 10px;flex-wrap:wrap}
+.schip{border:1px solid var(--line-2);background:var(--surface);border-radius:999px;padding:4px 13px;font-size:12.5px;font-weight:700;color:var(--ink-2)}
+.schip[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink);border-color:var(--acc)}
 .vid-tag{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--heat);display:inline-flex;align-items:center;gap:4px}
 .from{display:block;font-size:11.5px;color:var(--mut)}
 .rm{border:0;background:transparent;color:var(--mut);font-size:15px;line-height:1;padding:2px 5px}
@@ -182,7 +185,7 @@ let SNAPSHOT = "September 24, 2026";
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-let query="", kind="all", cat="all", activeTags=new Set(), sortBy="recent", openId=null, wakeLock=null;
+let query="", kind="all", cat="all", activeTags=new Set(), sortBy="recent", openId=null, wakeLock=null, curScale="";
 let shop = [];
 let ME = (function(){ try{ return localStorage.getItem("rb_me")||""; }catch(e){ return ""; } })();
 let LIVE = false;
@@ -257,17 +260,27 @@ function cardHTML(r){
     ${(r.components||[]).length?`<span class="badge">${esc(r.components[0].name)}</span>`:""}
     ${r.video?`<span class="vid-tag">&#9654; Video</span>`:""}
     <h3>${esc(r.title)}</h3>
-    <div class="meta">${r.totalTime?`<span>${esc(r.totalTime)}</span>`:""}${r.servings?`<span>Serves ${esc(r.servings)}</span>`:""}${(r.ingredients||[]).length?`<span>${r.ingredients.length} ingredients</span>`:""}</div>
+    <div class="meta">${r.totalTime?`<span>${esc(r.totalTime)}</span>`:""}${r.servings?`<span>Serves ${esc(r.servings)}</span>`:""}${(r.ingredients||(r.scales?r.scales[Object.keys(r.scales)[0]]:[])||[]).length?`<span>${(r.ingredients||r.scales[Object.keys(r.scales)[0]]).length} ingredients</span>`:""}</div>
     ${(r.tags||[]).length?`<div class="tags">${r.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>`:""}
     ${r.rating?`<span class="stars">${"★".repeat(r.rating)}${"☆".repeat(5-r.rating)}</span>`:""}
     ${r.notes?`<div class="note-flag">${esc(r.notes)}</div>`:""}
   </button>`;
 }
 
+function scaleKeys(r){ return r.scales?Object.keys(r.scales):null; }
+function ingFor(r){
+  const ks=scaleKeys(r);
+  if(!ks) return r.ingredients||[];
+  if(!ks.includes(curScale)) curScale=ks[0];
+  return r.scales[curScale]||[];
+}
 function openCook(id){
   openId=id; $("#cook").hidden=false; document.body.style.overflow="hidden";
   const r=RECIPES.find(x=>x.id===id);
-  const done=load("rb_ing_"+id,[]);
+  const ks=scaleKeys(r);
+  const ings=ingFor(r);
+  const doneKey="rb_ing_"+id+(ks?"_"+curScale:"");
+  const done=load(doneKey,[]);
   $("#cook").innerHTML=`
   <div class="sheet-bar">
     <button class="btn" data-act="close-cook">← Box</button>
@@ -299,7 +312,8 @@ function openCook(id){
         </div>`).join("")}
         <div class="panel sticky">
         <p class="lab">Ingredients<span class="spacer"></span><span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--mut)">tap to check off</span></p>
-        <ul class="ing">${(r.ingredients||[]).map((ing,i)=>`<li>
+        ${ks?`<div class="scalerow">${ks.map(k=>`<button class="schip" aria-pressed="${k===curScale}" data-scale="${esc(k)}">${esc(k)}</button>`).join("")}</div>`:""}
+        <ul class="ing">${ings.map((ing,i)=>`<li>
           <input type="checkbox" id="ing${i}" data-ing="${i}" ${done.includes(i)?"checked":""}>
           <label for="ing${i}">${esc(ing)}</label>
           <button class="addone" data-add="${esc(ing)}" title="Add to shopping list">+</button></li>`).join("")}</ul>
@@ -390,11 +404,12 @@ document.addEventListener("click",e=>{
   if(t.dataset.tag!==undefined){ const g=t.dataset.tag; activeTags.has(g)?activeTags.delete(g):activeTags.add(g); return render(); }
   if(t.id==="clearTags"){ activeTags.clear(); return render(); }
   if(t.dataset.add!==undefined){ const r=RECIPES.find(x=>x.id===openId); return addToShop([t.dataset.add],r&&r.title); }
+  if(t.dataset.scale!==undefined){ curScale=t.dataset.scale; return openCook(openId); }
   if(t.dataset.rm!==undefined){ if(window.GL) window.GL.remove(t.dataset.rm); return; }
   const a=t.dataset.act; if(!a) return;
   if(a==="close-cook") return closeCook();
   if(a==="close-shop") return closeShop();
-  if(a==="add-all"){ const r=RECIPES.find(x=>x.id===openId); const c=(r.components||[]).flatMap(x=>x.ingredients||[]); return addToShop(c.concat(r.ingredients||[]),r.title); }
+  if(a==="add-all"){ const r=RECIPES.find(x=>x.id===openId); const c=(r.components||[]).flatMap(x=>x.ingredients||[]); return addToShop(c.concat(ingFor(r)),r.title); }
   if(a==="shop-add"){ const v=$("#shopAdd").value.trim(); if(v){ addToShop(splitItems(v),""); } return; }
   if(a==="clear-done"){ if(window.GL) shop.filter(i=>i.done).forEach(i=>window.GL.remove(i.key)); return; }
   if(a==="change-me"){ setMe(""); return; }
@@ -405,8 +420,9 @@ document.addEventListener("change",e=>{
   if(t.id==="sort"){ sortBy=t.value; return render(); }
   if(t.dataset.key!==undefined){ if(window.GL) window.GL.setDone(t.dataset.key, t.checked, ME||"someone"); return; }
   if(t.dataset.ing!==undefined && openId){
-    const done=[...document.querySelectorAll("#cook .ing input:checked")].map(i=>+i.dataset.ing);
-    save("rb_ing_"+openId,done);
+    const r=RECIPES.find(x=>x.id===openId);
+    const done=[...document.querySelectorAll("#cook .panel.sticky .ing input:checked")].map(i=>+i.dataset.ing);
+    save("rb_ing_"+openId+(scaleKeys(r)?"_"+curScale:""),done);
   }
 });
 document.addEventListener("input",e=>{ if(e.target.id==="q"){ query=e.target.value; render(); } });
