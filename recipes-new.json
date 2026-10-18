@@ -1,5 +1,58 @@
 [
  {
+  "id": "pancakes",
+  "title": "Easy Pancake Batter",
+  "kind": "food",
+  "totalTime": "20 min (5 min rest)",
+  "servings": "2 (half) or 4 (as written) or 8 (double)",
+  "tags": ["breakfast", "pancakes", "easy", "weekday"],
+  "source": "",
+  "url": "",
+  "scales": {
+   "Half": [
+    "3/4 cup all-purpose flour",
+    "1 Tbsp sugar",
+    "1 tsp baking powder",
+    "1/4 tsp salt",
+    "2/3 cup milk",
+    "1 large egg",
+    "1 1/2 Tbsp melted butter",
+    "1/2 tsp vanilla extract"
+   ],
+   "As written": [
+    "1 1/2 cups all-purpose flour",
+    "2 Tbsp sugar",
+    "2 tsp baking powder",
+    "1/2 tsp salt",
+    "1 1/4 cups milk",
+    "1 large egg",
+    "3 Tbsp melted butter",
+    "1 tsp vanilla extract"
+   ],
+   "Double": [
+    "3 cups all-purpose flour",
+    "1/4 cup sugar",
+    "4 tsp baking powder",
+    "1 tsp salt",
+    "2 1/2 cups milk",
+    "2 large eggs",
+    "6 Tbsp melted butter",
+    "2 tsp vanilla extract"
+   ]
+  },
+  "steps": [
+   "Whisk together the flour, sugar, baking powder and salt in a bowl.",
+   "In another bowl, whisk the milk, egg, melted butter and vanilla.",
+   "Pour wet into dry and stir just until combined - lumps are fine, don't overmix.",
+   "Let the batter rest 5 minutes.",
+   "Pour about 1/4 cup batter onto a hot, greased griddle over medium heat. Flip when bubbles form and the edges set; cook 1-2 min more per side."
+  ],
+  "notes": "Use the Half / As written / Double buttons above the ingredients to switch batch size - the ingredient list and the add-to-grocery-list button both follow whichever one is selected. Yields: Half about 4 pancakes (2 people), As written about 8 (4 people), Double about 16 (8 people). The half batch still uses 1 whole egg, so it runs slightly richer than a true half - that is on purpose, half an egg is not worth the trouble. Overmixing makes tough pancakes. Swap in buttermilk plus a splash of lemon juice for extra fluffiness. Batter keeps 2-3 days refrigerated in an airtight container - stir before using, it loses some lift by day 2-3.",
+  "rating": 0,
+  "createdAt": "2026-10-11T10:52:14.000Z",
+  "updatedAt": "2026-10-18T12:00:00.000Z"
+ },
+ {
   "id": "slow-cooker-meatballs",
   "kind": "food",
   "title": "Slow Cooker Meatballs",
