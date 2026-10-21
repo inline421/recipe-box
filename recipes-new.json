@@ -1,5 +1,42 @@
 [
  {
+  "id": "fresh-basil-pesto",
+  "title": "Fresh Basil Pesto",
+  "kind": "food",
+  "totalTime": "15 min",
+  "servings": "makes about 1 cup (16 Tbsp)",
+  "tags": [
+   "meatless",
+   "sauce",
+   "italian",
+   "pasta",
+   "no cook",
+   "freezer"
+  ],
+  "source": "Simply Recipes - Elise Bauer",
+  "url": "https://www.simplyrecipes.com/recipes/fresh_basil_pesto/",
+  "video": "https://cdn.jwplayer.com/videos/4a1NKNrY-px9BSfP1.mp4",
+  "ingredients": [
+   "2 cups fresh basil leaves, packed (can sub half with baby spinach)",
+   "1/2 cup Romano or Parmigiano-Reggiano, freshly grated (about 2 oz)",
+   "1/2 cup extra virgin olive oil",
+   "1/3 cup pine nuts (walnuts work, chopped)",
+   "3 cloves garlic, minced",
+   "1/4 tsp salt, more to taste",
+   "1/8 tsp black pepper, more to taste"
+  ],
+  "steps": [
+   "Put the basil and pine nuts in a food processor and pulse a few times.",
+   "Add the garlic and cheese, pulse again, and scrape down the sides.",
+   "With the processor running, pour the olive oil in a slow steady stream - that is what emulsifies it and keeps the oil from separating later. Stop and scrape the sides once or twice.",
+   "Season with salt and pepper to taste.",
+   "Toss with pasta, dollop on a baked potato, or spread on toast or crackers."
+  ],
+  "notes": "Toast the pine nuts in a dry pan a few minutes first if you have the time - big flavor payoff, and it is the one thing the recipe leaves out. Pour the oil SLOWLY while the motor runs; dumping it in gives you a broken, oily pesto. Grate the cheese yourself, the pre-shredded stuff is coated in anti-caking starch and goes gritty. STORING: press into a jar, cover the surface with a thin layer of olive oil to stop it browning, refrigerate about 1 week. FREEZING: freeze in an ice cube tray, then bag the cubes - 2 cubes is about enough for one serving of pasta. If freezing, leave the cheese out and stir it in after thawing. PASTA: thin it with a splash of the starchy pasta water when you toss it, and do not heat it on the stove or it turns dull and bitter.",
+  "createdAt": "2026-10-21T21:00:00.000Z",
+  "rating": 0
+ },
+ {
   "id": "miso-glazed-salmon",
   "title": "Miso Glazed Salmon",
   "kind": "food",
