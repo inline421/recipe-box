@@ -1,5 +1,64 @@
 [
  {
+  "id": "italian-chopped-salad",
+  "title": "Italian Chopped Salad",
+  "kind": "food",
+  "totalTime": "20 min",
+  "servings": "6",
+  "tags": [
+   "salad",
+   "meatless",
+   "italian",
+   "no cook",
+   "side"
+  ],
+  "source": "Love and Lemons - Jeanine Donofrio (adapted from Gaby Dalkin)",
+  "url": "https://www.loveandlemons.com/chopped-salad/",
+  "components": [
+   {
+    "name": "Lemon Vinaigrette",
+    "why": "Make it first so the shallot and garlic have a few minutes to mellow in the acid.",
+    "ingredients": [
+     "1/4 cup extra virgin olive oil",
+     "1 1/2 Tbsp lemon juice",
+     "1 Tbsp red wine vinegar",
+     "1/2 shallot, finely chopped",
+     "1 clove garlic, finely chopped",
+     "1 Tbsp dried oregano",
+     "1/2 tsp sea salt",
+     "Freshly ground black pepper"
+    ],
+    "steps": [
+     "Whisk everything together in a small bowl and set aside."
+    ]
+   }
+  ],
+  "ingredients": [
+   "1 small head iceberg lettuce",
+   "1 head radicchio",
+   "1/2 small red onion, thinly sliced",
+   "1 pint cherry tomatoes, halved or quartered",
+   "1 can chickpeas, rinsed and drained",
+   "4 oz fresh pearl mozzarella, drained",
+   "4 oz provolone, diced",
+   "OPTIONAL: 5 pepperoncini, stemmed and sliced (jarred, in brine)",
+   "OPTIONAL: 4 oz Italian cured meat, cubed or torn - salami, soppressata, capicola or mortadella",
+   "1 tsp dried oregano, to finish",
+   "Sea salt and black pepper"
+  ],
+  "steps": [
+   "Make the lemon vinaigrette (above) and set it aside.",
+   "Halve the iceberg through the core, cut the core out, and slice lengthwise into 1/4-inch ribbons. Do the same with the radicchio.",
+   "In a large bowl combine the lettuce, radicchio, red onion, tomatoes, chickpeas, mozzarella and provolone.",
+   "Add the pepperoncini if you want the heat and tang, and the cured meat if you want it to eat like a meal.",
+   "Drizzle with the dressing and toss gently to coat.",
+   "Season with salt and pepper, toss again, sprinkle with the oregano and serve."
+  ],
+  "notes": "PEPPERONCINI ARE OPTIONAL: jarred, packed in brine. They bring heat and vinegar - leave them out for a milder salad, or add a splash of their brine to the dressing instead if you want the tang without the bite. ITALIAN MEAT IS OPTIONAL: Gaby Dalkin's original has 4 oz cubed Genoa salami; Love and Lemons drops it to keep it vegetarian. Add about 4 oz of any Italian cured meat - salami, soppressata, capicola, mortadella - cubed or torn, and that turns this from a side into dinner. If you skip the meat, season more generously with salt, or add chopped sun-dried tomatoes or roasted red peppers for the same savory hit. DRESS IT LATE: iceberg and radicchio hold up better than most greens but leftovers are only good about a day before they wilt. Dress only what you are eating if you want it to keep. The red onion is in the original ingredient list but missing from its instructions - it goes in with the rest.",
+  "createdAt": "2026-10-26T12:00:00.000Z",
+  "rating": 0
+ },
+ {
   "id": "fresh-basil-pesto",
   "title": "Fresh Basil Pesto",
   "kind": "food",
