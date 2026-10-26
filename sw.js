@@ -1,5 +1,5 @@
 // Recipe Box service worker - app shell cached, recipes refreshed when online.
-const SHELL = 'rb-shell-v4';
+const SHELL = 'rb-shell-v5';
 const DATA  = 'rb-data-v1';
 const LIB   = 'rb-lib-v1';
 const SHELL_FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
