@@ -82,11 +82,17 @@ button{cursor:pointer}
 .offline{display:none;background:var(--heat);color:#fff;font-size:12.5px;font-weight:600;text-align:center;padding:5px 16px}
 body.is-offline .offline{display:block}
 @media (display-mode:standalone){.top{padding-top:0}}
-.bar{display:flex;flex-wrap:wrap;gap:7px;align-items:center;padding:12px 0 16px}
+.bar{padding:10px 0 14px}
+.courserow{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+.crs{border:1px solid var(--line-2);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:13.5px;font-weight:700;color:var(--ink-2)}
+.crs[aria-pressed="true"]{background:var(--acc);color:var(--acc-ink);border-color:var(--acc)}
+.fbtn{display:inline-flex;align-items:center;gap:6px;padding:6px 13px;font-size:13px}
+.fdot{min-width:17px;height:17px;border-radius:999px;background:var(--heat);color:#fff;font-size:10.5px;font-weight:700;display:grid;place-items:center;padding:0 4px}
+.fpanel{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:10px;padding-top:11px;border-top:1px solid var(--line)}
 .chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 11px;font-size:12.5px;color:var(--ink-2)}
 .chip[aria-pressed="true"]{background:var(--acc-soft);border-color:var(--acc);color:var(--acc);font-weight:600}
 .spacer{flex:1}
-.catrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-right:4px}
+.catrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .cchip{border:1px solid var(--line-2);background:var(--surface);border-radius:999px;padding:4px 12px;font-size:12.5px;font-weight:600;color:var(--ink-2)}
 .cchip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 select.sort{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 10px;font-size:12.5px}
@@ -185,7 +191,8 @@ let SNAPSHOT = "September 24, 2026";
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-let query="", kind="all", cat="all", activeTags=new Set(), sortBy="recent", openId=null, wakeLock=null, curScale="";
+let query="", kind="all", cat="all", course="all", activeTags=new Set(), sortBy="recent", openId=null, wakeLock=null, curScale="";
+let filtersOpen=false;
 let shop = [];
 let ME = (function(){ try{ return localStorage.getItem("rb_me")||""; }catch(e){ return ""; } })();
 let LIVE = false;
@@ -213,15 +220,31 @@ function catsOf(r){
   return out;
 }
 function inCat(r){ return cat==="all" || catsOf(r).has(cat); }
+const COURSES=[["dinner","Dinners"],["side","Sides"],["soup","Soups & Stews"],["breakfast","Breakfast"]];
+function courseOf(r){
+  const out=new Set();
+  if(isDrink(r)) return out;
+  const txt=((r.title||"")+" "+(r.tags||[]).join(" ")).toLowerCase();
+  const soup=/\bsoups?\b|\blaksa\b|\bstews?\b|\bchili\b|\bchowder\b|\bramen\b|\bpho\b|\bbisque\b|\bbroth\b/.test(txt);
+  const side=/\bside\b|\bsalad\b|\bslaw\b|\bsauce\b|\bdressing\b|\bdip\b|\bappetizer\b|\bsnack\b|\bbread\b|\bcondiment\b|\bvegetables?\b/.test(txt);
+  const am=/\bbreakfast\b|\bbrunch\b|\bpancakes?\b|\bwaffles?\b|\bmuffins?\b|\bdessert\b|\bcookies?\b|\bcake\b/.test(txt);
+  if(soup) out.add("soup");
+  if(side && !soup) out.add("side");
+  if(am) out.add("breakfast");
+  if(!side && !am) out.add("dinner");
+  return out;
+}
+function inCourse(r){ return course==="all" || courseOf(r).has(course); }
 function isDrink(r){ return (r.kind||"food")==="drink"; }
 function inKind(r){ return kind==="all" || (kind==="drink")===isDrink(r); }
-function allTags(){ const s=new Set(); RECIPES.filter(r=>inKind(r)&&inCat(r)).forEach(r=>(r.tags||[]).forEach(t=>s.add(t))); return [...s].sort(); }
+function allTags(){ const s=new Set(); RECIPES.filter(r=>inKind(r)&&inCat(r)&&inCourse(r)).forEach(r=>(r.tags||[]).forEach(t=>s.add(t))); return [...s].sort(); }
 
 function visible(){
   const q=query.trim().toLowerCase();
   let out=RECIPES.filter(r=>{
     if(!inKind(r)) return false;
     if(!inCat(r)) return false;
+    if(!inCourse(r)) return false;
     if(activeTags.size && ![...activeTags].every(t=>(r.tags||[]).includes(t))) return false;
     if(!q) return true;
     return [r.title,r.source,(r.tags||[]).join(" "),(r.ingredients||[]).join(" "),r.notes].join(" ").toLowerCase().includes(q);
@@ -243,14 +266,22 @@ function render(){
       <button data-kind="drink" aria-pressed="${kind==='drink'}">Drinks${nD?" "+nD:""}</button>
     </div>`;
   const pool=RECIPES.filter(inKind);
+  const cpool=pool.filter(inCourse);
   const catSeg=`<div class="catrow"><button class="cchip" aria-pressed="${cat==='all'}" data-cat="all">All</button>`+
-    CATS.map(([k,label])=>{ const n=pool.filter(r=>catsOf(r).has(k)).length;
+    CATS.map(([k,label])=>{ const n=cpool.filter(r=>catsOf(r).has(k)).length;
       return n?`<button class="cchip" aria-pressed="${cat===k}" data-cat="${k}">${label} ${n}</button>`:""; }).join("")+`</div>`;
-  $("#bar").innerHTML = seg + catSeg + (tags.length?tags.map(t=>`<button class="chip" aria-pressed="${activeTags.has(t)}" data-tag="${esc(t)}">${esc(t)}</button>`).join("")
-    + (activeTags.size?`<button class="btn-q" id="clearTags">clear</button>`:""):"")
+  const nActive=(kind!=="all"?1:0)+(cat!=="all"?1:0)+activeTags.size;
+  const courseRow=`<div class="courserow"><button class="crs" aria-pressed="${course==='all'}" data-course="all">All</button>`+
+    COURSES.map(([k,label])=>{ const n=pool.filter(r=>courseOf(r).has(k)).length;
+      return n?`<button class="crs" aria-pressed="${course===k}" data-course="${k}">${label} ${n}</button>`:""; }).join("")+
+    `<span class="spacer"></span><button class="btn fbtn" id="fToggle" aria-expanded="${filtersOpen}">Filters${nActive?`<span class="fdot">${nActive}</span>`:""}<span>${filtersOpen?"▴":"▾"}</span></button></div>`;
+  const panel=`<div class="fpanel"${filtersOpen?"":" hidden"}>` + seg + catSeg
+    + (tags.length?tags.map(t=>`<button class="chip" aria-pressed="${activeTags.has(t)}" data-tag="${esc(t)}">${esc(t)}</button>`).join(""):"")
+    + (nActive?`<button class="btn-q" id="clearTags">clear all</button>`:"")
     + `<span class="spacer"></span>`
-    + `<select class="sort" id="sort" aria-label="Sort recipes"><option value="recent">Recently added</option><option value="az">A–Z</option><option value="quick">Quickest first</option></select>`;
-  $("#sort").value=sortBy;
+    + `<select class="sort" id="sort" aria-label="Sort recipes"><option value="recent">Recently added</option><option value="az">A–Z</option><option value="quick">Quickest first</option></select></div>`;
+  $("#bar").innerHTML = courseRow + panel;
+  if($("#sort")) $("#sort").value=sortBy;
   $("#grid").innerHTML = v.length ? v.map(cardHTML).join("") : `<div class="empty" style="grid-column:1/-1">Nothing matches that search.</div>`;
   $("#foot").innerHTML = `Recipe Box — ${RECIPES.length} recipes, updated ${esc(SNAPSHOT)}. Checked ingredients stay on this device. The grocery list is shared and live.`;
 }
@@ -401,8 +432,10 @@ document.addEventListener("click",e=>{
   if(t.id==="shopBtn") return openShop();
   if(t.dataset.kind!==undefined){ kind=t.dataset.kind; cat="all"; activeTags.clear(); return render(); }
   if(t.dataset.cat!==undefined){ cat=t.dataset.cat; activeTags.clear(); return render(); }
+  if(t.dataset.course!==undefined){ course=t.dataset.course; activeTags.clear(); return render(); }
+  if(t.closest("#fToggle")){ filtersOpen=!filtersOpen; save("rb_filters_open",filtersOpen); return render(); }
   if(t.dataset.tag!==undefined){ const g=t.dataset.tag; activeTags.has(g)?activeTags.delete(g):activeTags.add(g); return render(); }
-  if(t.id==="clearTags"){ activeTags.clear(); return render(); }
+  if(t.id==="clearTags"){ activeTags.clear(); kind="all"; cat="all"; return render(); }
   if(t.dataset.add!==undefined){ const r=RECIPES.find(x=>x.id===openId); return addToShop([t.dataset.add],r&&r.title); }
   if(t.dataset.scale!==undefined){ curScale=t.dataset.scale; return openCook(openId); }
   if(t.dataset.rm!==undefined){ if(window.GL) window.GL.remove(t.dataset.rm); return; }
@@ -433,6 +466,7 @@ document.addEventListener("keydown",e=>{
 });
 document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible"&&openId&&!wakeLock) requestWake(); });
 
+filtersOpen=!!load("rb_filters_open",false);
 dot();
 if(/(^|[?&#])list\b/.test(location.search+location.hash)){
   openShop();
