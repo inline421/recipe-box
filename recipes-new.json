@@ -1,5 +1,45 @@
 [
  {
+  "id": "lemon-parmesan-zucchini",
+  "title": "Garlic Lemon Parmesan Roasted Zucchini",
+  "kind": "food",
+  "totalTime": "17 min (5 min prep)",
+  "servings": "8 as a side",
+  "tags": [
+   "meatless",
+   "side",
+   "vegetables",
+   "oven",
+   "quick",
+   "weekday"
+  ],
+  "source": "Cooking Classy - Jaclyn (adapted from Liluna)",
+  "url": "https://www.cookingclassy.com/garlic-lemon-parmesan-oven-roasted-zucchini/",
+  "ingredients": [
+   "1 1/2 lb zucchini (about 4-5 small/medium)",
+   "2 Tbsp olive oil",
+   "Zest of 1 small lemon (about 1 tsp)",
+   "2 cloves garlic, crushed or finely minced",
+   "3/4 cup finely shredded parmesan",
+   "Salt and freshly ground black pepper",
+   "OPTIONAL: 1 lemon, cut into wedges - extra squeezes of juice at the table"
+  ],
+  "steps": [
+   "Heat the oven to 350F and line a rimmed baking sheet with foil.",
+   "Cut each zucchini lengthwise into 4 wedges.",
+   "Stir the olive oil, lemon zest and garlic together in a small bowl.",
+   "Lay the zucchini on the sheet, cut side up, spaced apart so they roast instead of steam.",
+   "Brush the oil mixture over the tops, spreading the garlic and zest so every piece gets some - it clumps, so work it around.",
+   "Sprinkle the tops with parmesan (scoop up any that falls to the sides and put it back on top) and season lightly with salt and pepper.",
+   "Bake 11-13 min.",
+   "Move the rack near the top and broil a few minutes, until the parmesan is golden brown. Watch it - this is the step that burns.",
+   "Serve warm. Squeeze fresh lemon over the top at the table if you want it brighter."
+  ],
+  "notes": "EXTRA LEMON (optional): the recipe only uses zest, which gives perfume but no acid. Serve it with lemon wedges and squeeze fresh juice over after it comes out of the oven - that is what makes it taste bright instead of just cheesy. Add the juice AFTER roasting, never before: acid under heat goes dull and bitter, and the extra liquid steams the zucchini soggy. Start with half a lemon over the whole tray and go from there. SPACE THEM OUT: crowded zucchini steams in its own water and goes limp. One layer, gaps between pieces. SALT LIGHTLY - the parmesan brings plenty. DON'T SKIP THE BROIL: 350F cooks it through but the browned parmesan crust is the whole point; a few minutes under the broiler, watching it. VARIATIONS (from the site): cayenne or paprika for heat, fresh rosemary or thyme. Good as a side or as a snack with a dip. Best straight out of the oven - it softens as it sits.",
+  "createdAt": "2026-10-26T19:00:00.000Z",
+  "rating": 0
+ },
+ {
   "id": "italian-chopped-salad",
   "title": "Italian Chopped Salad",
   "kind": "food",
