@@ -475,9 +475,9 @@ if(/(^|[?&#])list\b/.test(location.search+location.hash)){
 $("#grid").innerHTML='<div class="loading" style="grid-column:1/-1">Loading recipes…</div>';
 const bust="?v="+Date.now();
 const grab=u=>fetch(u+bust).then(r=>r.ok?r.json():[]).catch(()=>[]);
-Promise.all([grab("recipes.json"),grab("recipes-extra.json"),grab("recipes-new.json")])
-  .then(([a,b,c])=>{
-    const all=(c||[]).concat(b||[],a||[]);
+Promise.all([grab("recipes.json"),grab("recipes-extra.json"),grab("recipes-new.json"),grab("recipes-latest.json")])
+  .then(([a,b,c,d])=>{
+    const all=(d||[]).concat(c||[],b||[],a||[]);
     if(!all.length) throw new Error("empty");
     const seen=new Set(); RECIPES=[];
     all.forEach(r=>{ if(r&&r.id&&!seen.has(r.id)){ seen.add(r.id); RECIPES.push(r); } });
