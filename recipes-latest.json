@@ -1,0 +1,40 @@
+[
+ {
+  "id": "senate-bean-soup-fast",
+  "title": "Senate Bean Soup (Fast, Canned Beans)",
+  "kind": "food",
+  "totalTime": "35 min",
+  "servings": "4 to 6",
+  "tags": ["soup", "pork", "ham", "beans", "weeknight", "one pot", "fast"],
+  "source": "Adapted for speed from NYT Cooking - Sarah DiGregorio",
+  "url": "https://cooking.nytimes.com/recipes/793197025-senate-bean-soup",
+  "ingredients": [
+   "1 Tbsp butter",
+   "1 red or yellow onion, finely chopped",
+   "5 cloves garlic, smashed and chopped",
+   "3 medium carrots, peeled and sliced 1/4 inch thick (thinner than the original - they only get 20 min)",
+   "1 1/2 tsp smoked paprika",
+   "1 tsp dried thyme",
+   "1 tsp kosher salt (NOT the original 1 Tbsp - see notes)",
+   "Black pepper",
+   "8 oz smoked ham steak or thick-cut deli ham, diced",
+   "6 cups chicken broth (low-sodium)",
+   "4 (15-oz) cans navy, great northern or cannellini beans, drained and rinsed",
+   "1 medium russet potato, peeled and cut into 1/2-inch dice",
+   "1 Tbsp cider vinegar",
+   "OPTIONAL: 8 oz kale, stems removed and chopped"
+  ],
+  "steps": [
+   "Melt the butter in a Dutch oven or soup pot over medium-high. Add the onion and cook, stirring often, 5-6 min until softened.",
+   "Add the garlic and carrots and cook, stirring, about 2 min until the garlic is fragrant.",
+   "Add the smoked paprika, thyme, 1 tsp salt and several generous grinds of pepper. Stir about 30 seconds to bloom the spices.",
+   "Add the diced ham, broth, drained beans and diced potato. Bring to a boil, then reduce to a simmer.",
+   "Simmer uncovered 15-20 min, until the potato and carrots are tender. Add the kale, if using, in the last 5 min.",
+   "Mash the potato against the side of the pot with a fork, then stir vigorously to break down some of the beans - that is what thickens it.",
+   "Stir in the cider vinegar. Taste and add salt and pepper as needed. It almost certainly needs the vinegar and a final crack of pepper, and may need no salt at all."
+  ],
+  "notes": "THIS IS THE FAST ADAPTATION, not the original. NYT's version is 1 hr 45 min: 1 lb soaked dried navy beans and two smoked ham hocks simmered until the collagen breaks down. That long simmer is the ham hocks, not the beans, so the shortcut has to replace both - canned beans AND diced smoked ham steak, with chicken broth standing in for the flavor the hocks would have given the water. SALT IS THE BIG CHANGE: the original calls for 1 Tbsp kosher salt because it starts with plain water and unsalted dried beans. Here the broth, the canned beans and the ham are all already salted - 1 Tbsp would ruin it. Start at 1 tsp and season at the very end. Use low-sodium broth and no-salt-added beans if you can find them. BEANS: 4 cans is about what 1 lb of dried beans yields; use 3 cans if you want it brothier. Rinse them - the canning liquid is starchy and salty. THICKENING: canned beans do not release starch the way a long simmer does, so the potato mash and crushing some of the beans matters more here than in the original. If it is still thin, mash more beans or simmer a few extra minutes uncovered. The vinegar at the end is not optional, it is what keeps it from tasting flat. The original recipe is linked above if you have the afternoon and want the hocks.",
+  "createdAt": "2026-10-28T12:00:00.000Z",
+  "rating": 0
+ }
+]
