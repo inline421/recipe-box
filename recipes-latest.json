@@ -1,5 +1,34 @@
 [
  {
+  "id": "game-day-pretzel-bites",
+  "title": "Game Day Pretzel Bites",
+  "kind": "food",
+  "totalTime": "25 min (10 min prep)",
+  "servings": "48 bites (6 to 8 as a snack)",
+  "tags": ["snack", "appetizer", "game day", "party", "easy", "meatless", "kids"],
+  "source": "Instagram - Jeff & Lauren (@jeffandlaurenshow)",
+  "url": "https://www.instagram.com/reel/DfHiLCKD5Dt/",
+  "video": "https://www.instagram.com/reel/DfHiLCKD5Dt/",
+  "ingredients": [
+   "1 can (8 count) refrigerated flaky biscuits",
+   "8 cups water",
+   "1/4 cup baking soda",
+   "2 Tbsp butter, melted",
+   "Coarse salt (pretzel salt or coarse kosher)"
+  ],
+  "steps": [
+   "Heat the oven to 425F and line a sheet pan with parchment.",
+   "Cut each biscuit into 6 pieces - 48 bites total.",
+   "Bring the water to a boil in a wide pot, then add the baking soda SLOWLY - it foams up hard the second it hits boiling water.",
+   "Drop the biscuit pieces into the bath for 20-30 seconds, working in batches so they are not crowded. Lift them out with a slotted spoon and set them on the parchment.",
+   "Brush each bite with melted butter and sprinkle with coarse salt.",
+   "Bake 12-15 min, until deep golden brown."
+  ],
+  "notes": "THE BAKING SODA BATH IS THE WHOLE TRICK - do not skip it. The alkaline water is what browns the outside and gives you actual pretzel flavor and chew; without it these are just baked biscuit pieces. Add the baking soda to the boiling water a spoonful at a time or it will foam over the pot. 20-30 seconds is enough; leave them longer and they get soapy and slick. WHAT A COMMENTER REPORTED: plain was about a 6/10, but tossed in garlic and parmesan before baking plus more melted butter after the bake it was a 12; a cinnamon sugar version was a 10. Worth doing half the batch savory and half sweet. Brushing again with butter right out of the oven is not in the original but it is what makes them taste like mall pretzels. SERVE: warm, with nacho/beer cheese sauce or grainy mustard. They go soft and tough within an hour or two, so time them to come out when people are ready to eat. 8-count biscuits cut in 6 gives 48 small bites; cut in 4 for bigger ones and add a minute or two in the oven.",
+  "createdAt": "2026-10-30T14:00:00.000Z",
+  "rating": 0
+ },
+ {
   "id": "senate-bean-soup-fast",
   "title": "Senate Bean Soup (Fast, Canned Beans)",
   "kind": "food",
