@@ -1,5 +1,34 @@
 [
  {
+  "id": "cheesy-carrot-courgette-orzo",
+  "title": "Cheesy Carrot & Zucchini Orzo",
+  "kind": "food",
+  "totalTime": "15 min",
+  "servings": "about 4 kid portions (batch cooks and freezes)",
+  "tags": ["kids", "pasta", "one pan", "weeknight", "freezer", "make ahead", "fast"],
+  "source": "Tiny Tums Recipes (@tinytumsrecipes)",
+  "url": "https://www.instagram.com/reel/DegzkJ4IX4g/",
+  "video": "https://www.instagram.com/reel/DegzkJ4IX4g/",
+  "ingredients": [
+   "1 Tbsp olive oil or butter",
+   "2 cloves garlic, minced",
+   "1 carrot, finely grated",
+   "1 small zucchini (courgette), finely grated",
+   "190 g dried orzo (scant 1 cup)",
+   "450 ml low-salt chicken or vegetable stock (scant 2 cups)",
+   "40 g cheddar, grated (about 1/3 cup)"
+  ],
+  "steps": [
+   "Heat the oil or butter in a pan over medium-high. Add the garlic, grated carrot and grated zucchini and fry 2-3 min, until soft and fragrant.",
+   "Add the orzo and the stock. Stir and bring to a boil.",
+   "Turn down to medium and cook 10 min, stirring occasionally so it does not catch on the bottom.",
+   "When the orzo is soft, take it off the heat and stir through the grated cheddar. Serve."
+  ],
+  "notes": "The recipe is from a UK baby/toddler account - courgette is zucchini, and it is written as a weaning recipe, suitable from 6 months. THE STOCK IS THE POINT: 450 ml to 190 g orzo is a tight ratio on purpose, so the orzo absorbs almost all of it and goes creamy like a risotto rather than being boiled and drained. Stir every couple of minutes - it will stick and scorch if you walk away. If it tightens up before the orzo is soft, splash in a little more stock or water. CHEESE OFF THE HEAT, always - cheddar stirred into a boiling pan goes stringy and oily. LOW-SALT STOCK matters if a baby or toddler is eating it; regular stock is far too salty for them. For adults it will taste underseasoned - salt and pepper your own bowl at the table rather than the pan. STORING (her numbers): fridge up to 4 days, freezer up to 3 months. It thickens hard as it cools, so loosen with a splash of water or stock when reheating. Grate the veg finely, not coarsely - fine grating is what makes it disappear into the sauce, which is the whole trick with kids.",
+  "createdAt": "2026-10-31T12:00:00.000Z",
+  "rating": 0
+ },
+ {
   "id": "game-day-pretzel-bites",
   "title": "Game Day Pretzel Bites",
   "kind": "food",
