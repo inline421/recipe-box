@@ -1,5 +1,39 @@
 [
  {
+  "id": "rigatoni-broccoli-lemon-sauce",
+  "title": "Rigatoni with Broccoli-Lemon Sauce",
+  "kind": "food",
+  "totalTime": "30 min",
+  "servings": "4 to 6",
+  "tags": ["pasta", "meatless", "italian", "broccoli", "weeknight", "fast", "one pot"],
+  "source": "Milk Street - Rose Hattabaugh",
+  "url": "https://www.177milkstreet.com/recipes/rigatoni-broccoli-lemon-sauce",
+  "ingredients": [
+   "1 lb broccoli, stems and florets separated",
+   "Kosher salt and ground black pepper",
+   "1 1/2 cups packed baby spinach",
+   "2 medium cloves garlic, chopped",
+   "4 Tbsp (1/2 stick) salted butter, cut into 4 pieces",
+   "1 Tbsp drained capers",
+   "1/2 tsp red pepper flakes",
+   "2 Tbsp finely grated lemon zest, divided",
+   "12 oz rigatoni",
+   "1 oz Pecorino Romano or Parmesan, finely grated (1/2 cup), plus more to serve"
+  ],
+  "steps": [
+   "Bring 4 quarts water and 2 Tbsp salt to a boil in a large pot.",
+   "Peel the broccoli stems, reserving any leaves, and cut crosswise into 1/2-inch rounds. Add the stems and leaves to the boiling water and cook until fully tender, about 10 min. Stir in the spinach and cook until wilted, about 20 seconds. Lift the vegetables out with a slotted spoon into a blender, and reserve 1/2 cup of the cooking water. Keep the water at a boil.",
+   "Cut the florets into 1- to 1 1/2-inch pieces. Add them to the boiling water and cook until crisp-tender, about 3 min. Lift them out with the slotted spoon into a colander and rinse under cold water until cooled. Keep the water at a boil.",
+   "To the blender add the garlic, butter, capers, pepper flakes, 3/4 tsp salt, 1 Tbsp of the lemon zest and the reserved 1/2 cup broccoli cooking water. Puree until smooth and bright green, about 30 seconds. Taste and season with salt and pepper.",
+   "Stir the rigatoni into the boiling water and cook until al dente. Reserve 1/2 cup of the cooking water, then drain.",
+   "Return the pasta to the pot and add the broccoli florets, the broccoli puree, 1/4 cup of the reserved pasta water, the remaining 1 Tbsp lemon zest and the cheese. Cook over medium, stirring constantly, until the sauce thickens slightly and the pasta is well coated, 1-2 min.",
+   "Off the heat, taste and season with salt and pepper. Serve with more cheese."
+  ],
+  "notes": "ONE POT OF WATER DOES THREE JOBS - stems, then florets, then the pasta. Do not dump it between steps, and do not skip reserving the 1/2 cup after the broccoli: that starchy, heavily salted water IS the liquid in the sauce, and it is where most of the seasoning comes from. 2 Tbsp of salt in 4 quarts sounds like a lot and is correct. THE STEMS ARE THE SAUCE, not scraps - peel them first, the skin is what makes stems fibrous. Any leaves on the head go in too. THE SPINACH IS FOR COLOR: the stems need a full 10 min to get tender, which is long enough to dull their green, and the spinach wilted in at the end brings the color back. That is why it is in there. RINSE THE FLORETS COLD - it stops the cooking so they stay crisp-tender and bright instead of going olive in the hot pasta. THE BUTTER GOES IN COLD, straight into the blender, and emulsifies with the hot vegetables and starchy water into a creamy sauce with no cream in it. ZEST IS SPLIT ON PURPOSE: 1 Tbsp blended into the sauce for depth, 1 Tbsp at the very end for brightness. Do not put it all in at once. Zest only, no juice - the acid would break the emulsion. 1-2 MINUTES AT THE END, no longer; cooking the finished sauce dulls both the color and the lemon. PECORINO IS SALTIER than Parmesan - taste before adding any salt at the end.",
+  "createdAt": "2026-11-02T12:00:00.000Z",
+  "rating": 0
+ },
+ {
   "id": "white-chicken-chili-loaded",
   "title": "White Chicken Chili (Loaded Up)",
   "kind": "food",
