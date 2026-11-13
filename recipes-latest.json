@@ -1,5 +1,43 @@
 [
  {
+  "id": "pork-adobo-slow-cooker",
+  "title": "Pork Adobo, Slow Cooker (Boneless)",
+  "kind": "food",
+  "totalTime": "8-9 hr (25 min hands-on) + marinating",
+  "servings": "8 to 10 as a main, 12+ in tacos",
+  "tags": ["pork", "slow cooker", "filipino", "tacos", "make ahead", "big batch", "freezer"],
+  "source": "Adapted for the slow cooker from the Tsingtao oven version (Isabel Lee, Forsyth Fire Escape)",
+  "url": "https://www.instagram.com/tsingtao_usa/",
+  "ingredients": [
+   "4-5 lb boneless skinless pork shoulder (Boston butt), fat cap left on",
+   "1 head garlic, minced to a paste",
+   "1 1/2 tsp paprika",
+   "1 1/2 tsp onion powder",
+   "1/2 tsp cumin",
+   "1 1/2 tsp dried oregano",
+   "1 Tbsp black pepper",
+   "1 Tbsp kosher salt (up to 4 tsp for a 5 lb roast)",
+   "Juice of 1 lime, plus wedges to serve",
+   "3 Tbsp vegetable oil",
+   "1 cup Modelo Especial (NOT the whole bottle - see notes)"
+  ],
+  "steps": [
+   "Pat the pork dry. Score the fat cap in a crosshatch about 1/4 inch deep, and cut 1-inch slits all over the meat so the marinade gets inside.",
+   "Mash or blend the garlic into a paste. Mix it with the paprika, onion powder, cumin, oregano, black pepper, salt, lime juice and oil.",
+   "Rub the marinade over every surface and push it down into the slits. Refrigerate 4 hours to overnight - overnight is noticeably better.",
+   "Set the pork in the slow cooker fat side UP. Pour the 1 cup of Modelo down the side of the crock, not over the pork.",
+   "Cover and cook on LOW 7-8 hours (or HIGH 4-5), until a fork twists in the meat with no resistance.",
+   "Lift the pork onto a board. Pour the cooking liquid into a saucepan, skim off the fat, and boil it down by about half into a pouring sauce.",
+   "Heat the broiler (or the oven to 450F). Shred the pork with two forks, pulling out any big pockets of fat, and spread it in a single layer on a foil-lined sheet pan.",
+   "Spoon about 1/2 cup of the reduced juices over the meat. Broil 5-8 min, until the edges are crisp and browned - watch it, it goes from brown to burnt fast.",
+   "Toss the meat, spoon over a little more juice, and broil another 3-5 min for a second round of crispy edges.",
+   "Serve with the remaining sauce and lime wedges."
+  ],
+  "notes": "THIS IS THE BONELESS, SKINLESS SLOW COOKER VERSION of the Tsingtao oven roast. The original is an 8-10 lb bone-in SKIN-ON shoulder whose whole payoff is crackling from a 450F blast; a slow cooker steams, so skin comes out gray and gelatinous. Without skin that problem disappears and you crisp the SHREDDED meat instead - carnitas style, crunchy edges all the way through instead of one sheet of crackling, and better for tacos. DO NOT SKIP THE BROIL. Slow-cooked pork with no browning step tastes flat and looks grey; the 5-8 minutes under the broiler is where all the roasted flavor comes from. ONLY 1 CUP OF BEER, not the bottle the original calls for. A slow cooker has no evaporation, and a 5 lb shoulder throws off a lot of its own liquid - a full bottle leaves the pork boiling in a pond instead of steaming above it. BEER: Modelo Especial is a direct swap for Tsingtao, both pale lagers, Modelo slightly maltier. Negra Modelo works too but makes a darker, roastier, more caramel-tasting sauce. The beer goes beside the pork, never over it. SCORE THE FAT CAP and leave it on - it bastes the roast and crisps up in the shreds later. The slits in the meat do the job the original's cut-under-the-skin step did. YIELD: 4-5 lb boneless gives roughly 3 lb of cooked meat. Plan about 1 lb of raw boneless pork per person for a plated main, less for tacos. Bone-in runs about an hour longer than boneless. OVERNIGHT MARINADE beats 4 hours by a wide margin - the salt has time to work through the whole roast, not just the surface. LEFTOVERS shred and freeze well; re-crisp under the broiler rather than microwaving. Good in tacos, on rice, in sandwiches with pickled onion.",
+  "createdAt": "2026-11-13T18:00:00.000Z",
+  "rating": 0
+ },
+ {
   "id": "tortellini-frizzled-onion-broth",
   "title": "Tortellini in Frizzled Onion Broth",
   "kind": "food",
