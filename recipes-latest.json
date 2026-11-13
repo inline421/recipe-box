@@ -1,5 +1,42 @@
 [
  {
+  "id": "tortellini-frizzled-onion-broth",
+  "title": "Tortellini in Frizzled Onion Broth",
+  "kind": "food",
+  "totalTime": "30 min",
+  "servings": "2 to 3",
+  "tags": ["soup", "pasta", "meatless", "weeknight", "fast", "one pot", "mushrooms"],
+  "source": "NYT Cooking - Zaynab Issa",
+  "url": "https://cooking.nytimes.com/recipes/773423783-tortellini-in-frizzled-onion-broth",
+  "ingredients": [
+   "2 Tbsp salted butter",
+   "2 Tbsp olive oil",
+   "1 medium yellow onion, thinly sliced",
+   "3 cloves garlic, smashed (add late - see notes)",
+   "2 oz shiitake mushroom caps, thinly sliced",
+   "Kosher salt",
+   "Coarsely ground black pepper",
+   "2 Tbsp sherry vinegar",
+   "4 cups good-quality broth (chicken, beef or vegetable)",
+   "10 oz cheese tortellini",
+   "Thinly sliced chives, to serve (optional)",
+   "Finely grated Parmesan or Pecorino Romano, to serve (optional)",
+   "Crusty bread or sourdough croutons, to serve (optional)"
+  ],
+  "steps": [
+   "Heat a medium pot over medium-high. Add the butter and, once it starts to foam, the olive oil. Swirl to combine.",
+   "Add the onion and mushrooms (hold the garlic back - see notes). Season with salt and pepper and cook, stirring often, until the onions are deeply browned, nearly burned, 12-15 min. That colour is the whole dish - do not stop early.",
+   "Add the smashed garlic and cook about 1 min, just until fragrant.",
+   "Pour in the sherry vinegar to deglaze, scraping up every browned bit off the bottom.",
+   "Add the broth (plus 1 cup water if you want it brothier), raise the heat to high and bring to a boil. Taste and season with salt.",
+   "Add the tortellini, stir so they do not stick, and cook to the LOW end of the package time - just shy of al dente.",
+   "Divide between bowls. Top with chives, Parmesan and more black pepper. Crusty bread or croutons alongside."
+  ],
+  "notes": "FRIZZLED, NOT CARAMELIZED: the point of this recipe is hard and fast, not low and slow - 12-15 min on medium-high until the onions are nearly burnt. That near-burnt edge is the flavour; pulling them at golden gives you a thin, sweet soup instead of an assertive one. GARLIC GOES IN LATE: the recipe says to add it with the onions, but several commenters found it scorches over 15 minutes at that heat and turns bitter. Add it in the last minute before the vinegar instead - the step above is written that way. CRISPY VERSION (from a commenter): fry the onion and mushroom hard for about 5 min until crisp but not softened, lift them out onto paper towels, then build the broth and scatter them back on at serving for texture on top. SALT LATE AND LIGHTLY - about 1,490 mg of sodium a serving as written, and the broth and the tortellini are both already salted. Season at the end, not the start. SUBS: red or white wine vinegar for the sherry vinegar, both commenter-tested. Baby bella or white mushrooms instead of shiitake, cheaper and fine. Any cheese-filled pasta works. A handful of spinach wilted in at the end is a good addition. MAKE AHEAD (the recipe's own tip): the broth keeps 2 days in the fridge WITHOUT the tortellini - bring it back to a boil and cook the pasta right before serving. Do not store leftovers with the tortellini in them; they bloat, go mushy and drink the broth. Cook only as much pasta as you are eating. 2 to 3 servings is small - it doubles without any changes.",
+  "createdAt": "2026-11-13T12:00:00.000Z",
+  "rating": 0
+ },
+ {
   "id": "rigatoni-broccoli-lemon-sauce",
   "title": "Rigatoni with Broccoli-Lemon Sauce",
   "kind": "food",
@@ -77,7 +114,7 @@
    "Whisk the miso and soy sauce into a ladleful of the hot broth until smooth, then stir it into the pot. Return the chicken. Add the corn and the remaining 1 tsp cumin and 1/2 tsp oregano. Cook 10 min.",
    "Off the heat: stir in the cream cheese or sour cream if using, then the lime juice, cilantro, and the second jalapeno minced raw with its seeds. Taste for salt - it will probably need more than you expect."
   ],
-  "notes": "WHY THESE CHANGES: the original is good but tastes thin on day one, because a slow cooker never browns anything, never reduces, and boils the aromatics for 5 hours. Every change here is aimed at that. BROWN THE CHICKEN - the fond in the bottom of the pot is the single biggest thing the original is missing. THIGHS, not breasts: more fat and collagen, they do not dry out over a long cook, and they shred properly. Bone-in skin-on is better still - brown the skin, build everything in that rendered fat, pull the skin off and drop the bones in the cooker for body; debone after shredding. CHILES: swap plain canned green chiles for FIRE-ROASTED (505 Southwestern or Hatch brand; frozen roasted Hatch is best of all). The jarred salsa verde adds tomatillo tang and body cheaply. The chipotles in adobo are the biggest flavor addition - the original has no smoke at all. BODY IS FLAVOR: blending a cup of beans back in is from the Cook's Illustrated version and it matters more than any spice; thin broth reads as bland even when properly seasoned. Masa harina (2 Tbsp slurried into broth) works too and adds toasted corn flavor. UMAMI: white chili has no tomato, no browned crust, no long-cooked collagen, so it has a real savory hole. White miso fills it without darkening the color; soy adds a back-note. Skip tomato paste - it turns the chili pink-orange and its sweetness fights the tomatillo. SPLIT THE SPICES: half the cumin and oregano up front, half in the last 10 min. Cumin's aroma is volatile and 5 hours of slow cooking blows it off. Blooming the second half in a little butter in a small pan first is better still. FINISH RAW: a whole jalapeno with seeds stirred in at the end - late raw chile heat is sharp and bright, stewed chile heat is dull. Same reason the lime and cilantro go in off the heat. SALT HARD. Bland white chili is under-salted far more often than it is under-spiced - but taste first, because the miso, soy, salsa verde and stock all bring salt of their own. Stovetop instead: 4 cups stock, simmer covered on low about 35 min.",
+  "notes": "WHY THESE CHANGES: the original is good but tastes thin on day one, because a slow cooker never browns anything, never reduces, and boils the aromatics for 5 hours. Every change here is aimed at that. BROWN THE CHICKEN - the fond in the bottom of the pot is the single biggest thing the original is missing. THIGHS, not breasts: more fat and collagen, they do not dry out over a long cook, and they shred properly. Bone-in skin-on is better still - brown the skin, build everything in that rendered fat, pull the skin off and drop the bones in the cooker for body; debone after shredding. CHILES: swap plain canned green chiles for FIRE-ROASTED (505 Southwestern or Hatch brand; frozen roasted Hatch is best of all). The jarred salsa verde adds tomatillo tang and body cheaply. The chipotles in adobo are the biggest flavor addition - the original has no smoke at all. BODY IS FLAVOR: blending a cup of beans back in is from the Cook's Illustrated version and it matters more than any spice; thin broth reads as bland even when properly seasoned. Masa harina (2 Tbsp slurried into broth) works too and adds toasted corn flavor. UMAMI: white chili has no tomato, no browned crust, no long-cooked collagen, so it has a real savory hole. White miso fills it without darkening the color; soy adds a back-note. Skip tomato paste - it turns the chili pink-orange and its sweetness fights the tomatillo. SPLIT THE SPICES: half the cumin and oregano up front, half in the last 10 min. Cumin's aroma is volatile and 5 hours of slow cooking blows it off. Blooming the second half in a little butter in a small pan first is better still. FINISH RAW: a whole jalapeno with seeds stirred in at the end - late raw chile heat is sharp and bright, stewed chile heat is dull. Same reason the lime and cilantro go in off the heat. SALT HARD. Bland white chili is under-salted far more often than it is under-spiced - but taste first, because the miso, soy, salsa verde and stock all bring salt of their own. Stovetop instead: 4 cups stock, simmer covered on low about 35 min. LEFTOVERS: drain the solids in a colander over a bowl and you have an enchilada/taquito filling plus a sauce; or thin it back out with stock and 2 cans of hominy for a white posole.",
   "createdAt": "2026-11-01T12:00:00.000Z",
   "rating": 0
  },
