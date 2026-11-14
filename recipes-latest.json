@@ -1,5 +1,42 @@
 [
  {
+  "id": "arroz-amarillo",
+  "title": "Arroz Amarillo (Yellow Rice)",
+  "kind": "food",
+  "totalTime": "35 min (10 min hands-on)",
+  "servings": "6 as a side",
+  "tags": ["side", "rice", "cuban", "latin", "easy", "weeknight", "meatless"],
+  "source": "Cuban/Puerto Rican standard - built on the Salima's Kitchen 30-minute version",
+  "url": "https://salimaskitchen.com/arroz-amarillo/",
+  "ingredients": [
+   "2 Tbsp olive oil or butter",
+   "1/2 small onion, finely chopped",
+   "1/2 green bell pepper, finely chopped",
+   "3 cloves garlic, minced",
+   "2 cups long-grain white rice",
+   "1 packet Sazon con Azafran (Goya, the orange packets) - or 1 tsp turmeric + 1/2 tsp paprika + 1 tsp salt",
+   "1/2 tsp ground cumin",
+   "1/2 tsp dried oregano",
+   "1 bay leaf",
+   "3 cups broth (chicken or vegetable), or water plus 2 tsp bouillon",
+   "1/2 cup frozen peas (optional)",
+   "Salt - go light, the Sazon and broth are both salty"
+  ],
+  "steps": [
+   "Rinse the rice in a sieve until the water runs clear, then shake it dry. Skip this and the grains clump.",
+   "Heat the oil or butter in a pot with a tight lid over medium. Cook the onion and bell pepper 5 min until soft, then the garlic 1 min more.",
+   "Add the rice and stir to coat every grain. Toast 1-2 min - this is what keeps it fluffy instead of sticky.",
+   "Add the Sazon, cumin, oregano and bay leaf. Stir 30 seconds.",
+   "Pour in the broth and stir once. Taste the liquid - it should taste a touch too salty, because the rice will absorb it. Bring to a boil.",
+   "Boil uncovered until the liquid drops to the level of the rice and small craters appear across the surface, about 5 min.",
+   "Stir once, clamp the lid on, turn the heat to LOW and cook 18-20 min. Do not lift the lid and do not stir.",
+   "Take it off the heat, scatter the peas over the top if using, put the lid back on and leave it 10 min. Fish out the bay leaf and fluff with a fork."
+  ],
+  "notes": "SAZON IS THE SHORTCUT. One packet of Goya Sazon con Azafran per 2 cups of rice gives you the colour and most of the flavour in one move - it is annatto, coriander, cumin, garlic, MSG and a lot of salt, which is why the added salt here is light. In any supermarket, orange box. NO SAZON? 1 tsp turmeric + 1/2 tsp paprika + 1 tsp salt gets you close on colour and is honestly fine. Bijol powder is the other Cuban standby. Real saffron is a different, more floral dish and costs 20x as much. JARRED SOFRITO (Goya, in the refrigerated section) replaces the onion, pepper and garlic entirely - 2 Tbsp, straight into the hot oil. That is the genuinely lazy version and it is good. THE CRATER CUE beats the clock: when the liquid has fallen to the level of the rice and little holes open across the top, that is the moment to cover and drop the heat. DO NOT LIFT THE LID OR STIR once it is covered. Stirring rice mid-cook knocks starch off the grains and makes it gummy - this is the single most common way yellow rice goes wrong. THE 10-MINUTE REST off the heat matters as much as the cooking; the grains finish on residual steam and firm up. Peas go in during the rest so they warm through without turning grey. RATIO: 1 1/2 cups liquid per cup of rice works for most long-grain. If your bag says 2:1, add another 1/4-1/2 cup. Brown rice will not work with these times. GOES WITH: the slow cooker pork adobo, black beans, roast chicken, anything saucy. Leftovers reheat best with a splash of water, covered, in the microwave.",
+  "createdAt": "2026-11-14T12:00:00.000Z",
+  "rating": 0
+ },
+ {
   "id": "pork-adobo-slow-cooker",
   "title": "Pork Adobo, Slow Cooker (Boneless)",
   "kind": "food",
@@ -17,13 +54,13 @@
    "1 1/2 tsp dried oregano",
    "1 Tbsp black pepper",
    "1 Tbsp kosher salt",
-   "Juice of 1 lime, plus wedges to serve",
-   "3 Tbsp vegetable oil",
+   "Juice of 1 lime (about 2 Tbsp), plus wedges to serve",
+   "3 Tbsp vegetable oil, melted butter or mayonnaise - or skip it, see notes",
    "3/4 to 1 cup Modelo Especial (3/4 cup for precut, 1 cup for a whole roast)"
   ],
   "steps": [
    "WHOLE ROAST: pat dry, score the fat cap in a crosshatch about 1/4 inch deep, and cut 1-inch slits all over the meat. PRECUT STEW MEAT: pull off the hard white fat pads and any thick membrane, leaving the marbling and thin fat - no scoring needed.",
-   "Mash or blend the garlic to a paste. Mix it with the paprika, onion powder, cumin, oregano, black pepper, salt, lime juice and oil.",
+   "Mash or blend the garlic to a paste. Mix it with the paprika, onion powder, cumin, oregano, black pepper, salt, lime juice and fat.",
    "Rub the marinade over every surface and down into the slits. Put the pork straight into the slow cooker insert, cover, and refrigerate 4 hours to overnight.",
    "Set the insert into a COLD slow cooker base - never a preheated one, a cold ceramic insert can crack. Whole roast goes fat side up. Pour the beer down the side of the crock, not over the pork.",
    "Cook on LOW until a fork twists with no resistance: 7-8 hours for a whole roast, 5-6 hours for precut chunks. Add about 45 min to either if the insert went in straight from the fridge. It holds on WARM afterwards.",
@@ -33,9 +70,9 @@
    "Spoon about 1/2 cup of the reduced juices over the meat. Broil 5-8 min, until the edges are crisp and browned - watch it, it goes from brown to burnt fast.",
    "Toss the meat, spoon over a little more juice, and broil another 3-5 min for a second round of crispy edges. Serve with the remaining sauce and lime wedges."
   ],
-  "notes": "THIS IS THE BONELESS, SKINLESS SLOW COOKER VERSION of the Tsingtao oven roast. The original is an 8-10 lb bone-in SKIN-ON shoulder whose whole payoff is crackling from a 450F blast; a slow cooker steams, so skin comes out gray and gelatinous. Without skin that problem disappears and you crisp the SHREDDED meat instead - carnitas style, crunchy edges all the way through instead of one sheet of crackling, and better for tacos. DO NOT SKIP THE BROIL. Slow-cooked pork with no browning step tastes flat and looks grey; those 5-8 minutes are where all the roasted flavor comes from. PRECUT STEW MEAT works fine and is often cheaper, but: trim it first (boneless picnic stew runs fatty and sinewy - expect to lose 15-20% to trim), knock 2 hours off the cook, and expect a smaller yield. 4 lb of trays gives roughly 2-2.5 lb of cooked meat. All that cut surface also means the marinade penetrates fully rather than sitting on the outside, so the cooking liquid comes out saltier - taste it before reducing it hard. OVERNIGHT MARINADE IS GOOD, not risky. One lime across 4-5 lb of pork is far too dilute to do any damage in 8-10 hours, and 1 Tbsp of salt over that weight is a dry-brine level that wants the time. Mushy exteriors come from much more acid or 24+ hours. If you want it belt-and-braces, hold the lime juice back and stir it in when the beer goes in. EARLY START: marinate in the slow cooker insert itself the night before, then in the morning just drop the insert into a cold base, add the beer and switch on. ONLY 3/4 TO 1 CUP OF BEER, not the bottle the original calls for. A slow cooker has no evaporation and pork throws off plenty of its own liquid - a full bottle leaves it boiling in a pond instead of steaming above it. Chunks release liquid faster than a roast, hence the smaller amount. BEER: Modelo Especial is a direct swap for Tsingtao, both pale lagers, Modelo slightly maltier. Negra Modelo works too but gives a darker, roastier, more caramel sauce. GARLIC: one head is about 10-12 cloves, roughly 3 Tbsp minced or 1.5 oz by weight. Jarred pre-minced is milder and slightly sour from the citric acid it is packed in, so use 4 Tbsp of it rather than 3. YIELD: plan about 1 lb of raw boneless pork per person for a plated main, less for tacos. Bone-in runs about an hour longer than boneless. LEFTOVERS shred and freeze well; re-crisp under the broiler rather than microwaving. Good in tacos, on rice, in sandwiches with pickled onion.",
+  "notes": "THIS IS THE BONELESS, SKINLESS SLOW COOKER VERSION of the Tsingtao oven roast. The original is an 8-10 lb bone-in SKIN-ON shoulder whose whole payoff is crackling from a 450F blast; a slow cooker steams, so skin comes out gray and gelatinous. Without skin that problem disappears and you crisp the SHREDDED meat instead - carnitas style, crunchy edges all the way through instead of one sheet of crackling, and better for tacos. DO NOT SKIP THE BROIL. Slow-cooked pork with no browning step tastes flat and looks grey; those 5-8 minutes are where all the roasted flavor comes from. PRECUT STEW MEAT works fine and is often cheaper, but: trim it first (boneless picnic stew runs fatty and sinewy - expect to lose 15-20% to trim), knock 2 hours off the cook, and expect a smaller yield. 4 lb of trays gives roughly 2-2.5 lb of cooked meat. All that cut surface also means the marinade penetrates fully rather than sitting on the outside, so the cooking liquid comes out saltier - taste it before reducing it hard. THE OIL IS NEARLY OPTIONAL. In a slow cooker braise it is not searing anything, it is only helping the spice paste spread, and pork shoulder brings plenty of its own fat. No oil in the house? Melted butter or 3 Tbsp of mayonnaise both work (mayo is mostly oil and clings better than oil does), or leave it out entirely and loosen the paste with a tablespoon of the beer. OVERNIGHT MARINADE IS GOOD, not risky. One lime across 4-5 lb of pork is far too dilute to do any damage in 8-10 hours, and 1 Tbsp of salt over that weight is a dry-brine level that wants the time. Mushy exteriors come from much more acid or 24+ hours. EARLY START: marinate in the slow cooker insert itself the night before, then in the morning just drop the insert into a cold base, add the beer and switch on. ONLY 3/4 TO 1 CUP OF BEER, not the bottle the original calls for. A slow cooker has no evaporation and pork throws off plenty of its own liquid - a full bottle leaves it boiling in a pond instead of steaming above it. Chunks release liquid faster than a roast, hence the smaller amount. BEER: Modelo Especial is a direct swap for Tsingtao, both pale lagers, Modelo slightly maltier. Negra Modelo works too but gives a darker, roastier, more caramel sauce. GARLIC: one head is about 10-12 cloves, roughly 3 Tbsp minced or 1.5 oz by weight. Jarred pre-minced is milder and slightly sour from the citric acid it is packed in, so use 4 Tbsp of it rather than 3. YIELD: plan about 1 lb of raw boneless pork per person for a plated main, less for tacos. Bone-in runs about an hour longer than boneless. SERVE WITH the arroz amarillo in this box. LEFTOVERS shred and freeze well; re-crisp under the broiler rather than microwaving. Good in tacos, on rice, in sandwiches with pickled onion.",
   "createdAt": "2026-11-13T18:00:00.000Z",
-  "updatedAt": "2026-11-13T23:00:00.000Z",
+  "updatedAt": "2026-11-14T12:00:00.000Z",
   "rating": 0
  },
  {
