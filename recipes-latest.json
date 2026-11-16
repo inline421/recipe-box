@@ -410,14 +410,14 @@
   },
   {
     "id": "cheesy-broccoli-squash-lentil-orzo",
-    "title": "Cheesy Broccoli, Butternut Squash & Lentil Orzo",
+    "title": "Cheesy Broccoli, Butternut Squash & Lentils",
     "kind": "food",
-    "totalTime": "30 min",
+    "totalTime": "40 min",
     "servings": "about 6 kid portions (batch cooks and freezes)",
     "tags": [
       "kids",
-      "pasta",
       "lentils",
+      "one pot",
       "weeknight",
       "freezer",
       "make ahead"
@@ -427,21 +427,20 @@
     "ingredients": [
       "1 Tbsp olive oil or butter",
       "2 cloves garlic, minced",
+      "150 g dry brown lentils (3/4 cup)",
+      "600 ml low-salt chicken or vegetable stock (about 2 1/2 cups)",
       "1 cup butternut squash, peeled and finely grated (or diced very small)",
       "1 cup broccoli florets, chopped very fine (pea-sized)",
-      "50 g dry brown lentils (1/4 cup)",
-      "190 g dried orzo (scant 1 cup)",
-      "700 ml low-salt chicken or vegetable stock (about 3 cups)",
       "40 g cheddar, grated (about 1/3 cup)"
     ],
     "steps": [
       "Rinse the lentils and pick out any small stones or shriveled lentils.",
-      "Bring the lentils and about 400 ml of the stock to a boil, then simmer 12-15 min until they're starting to soften.",
-      "Meanwhile, heat the oil or butter in a second pan over medium-high and saute the garlic and grated squash 2-3 min. If the squash is diced, skip the saute and add it to the lentils for their last 5 min instead.",
-      "Add the squash, orzo, broccoli and the remaining stock to the lentils. Simmer 8-10 min, stirring often, until the orzo is tender and the liquid is mostly absorbed. Add a splash of water if it dries out.",
-      "Check that the lentils, broccoli and squash are all mashable soft. Take it off the heat and stir in the cheddar."
+      "Heat the oil or butter in a pot over medium and cook the garlic about 1 min, until fragrant.",
+      "Add the lentils and all the stock. Bring to a boil, then simmer 15-20 min.",
+      "Add the squash and broccoli and simmer 8-10 min more, stirring now and then, until the lentils and veg are all very soft (25-30 min total for the lentils). Add a splash of water if it dries out.",
+      "Take it off the heat, mash a little with a fork, and stir in the cheddar."
     ],
-    "notes": "Variation of the Cheesy Carrot & Zucchini Orzo, made with brown lentils, broccoli and butternut squash. Brown lentils need a 12-15 min head start because orzo cooks faster. Make sure the lentils, broccoli and squash are all fork-mashable soft for a toddler, and mash a little if you want it smoother. Don't add salt: the cheese and low-salt stock are enough for under-2s. Lentils add fiber, so start with smaller portions. Cheese off the heat. Pre-cut squash saves the peeling. Freeze single portions in ice-cube trays and reheat with a splash of water.",
+    "notes": "Lentils-only variation of the Cheesy Carrot & Zucchini Orzo, with brown lentils in place of the orzo, plus broccoli and butternut squash. Make sure the lentils, broccoli and squash are all fork-mashable soft for a toddler; mash more for a smoother texture. Don't add salt: the cheese and low-salt stock are enough for under-2s. Lentils are high in fiber, so start with smaller portions. Cheese goes in off the heat. Pre-cut squash saves the peeling. Freeze single portions in ice-cube trays and reheat with a splash of water.",
     "createdAt": "2026-11-16T16:40:00.000Z",
     "rating": 0
   }
