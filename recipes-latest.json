@@ -1,5 +1,48 @@
 [
  {
+  "id": "japanese-chicken-curry",
+  "title": "Japanese Chicken Curry (Kare Raisu)",
+  "kind": "food",
+  "totalTime": "1 hr 10 min (20 min prep)",
+  "servings": "8 - leftovers freeze well",
+  "tags": ["chicken", "japanese", "curry", "rice", "one pot", "weeknight", "freezer", "kids"],
+  "source": "Just One Cookbook - Namiko Chen",
+  "url": "https://www.justonecookbook.com/simple-chicken-curry/",
+  "ingredients": [
+   "1 1/2 lb boneless skinless chicken thighs, cut into bite-size pieces",
+   "Freshly ground black pepper",
+   "1 1/2 Tbsp neutral oil",
+   "2 large yellow onions (about 1 1/2 lb), cut into thick wedges",
+   "2 cloves garlic, minced",
+   "1 tsp fresh ginger, grated (with its juice)",
+   "2 carrots, peeled and cut into rolling wedges",
+   "3 Yukon gold potatoes, peeled and quartered (see notes on russets)",
+   "4 cups chicken stock (or half stock half water for less salt)",
+   "1/2 apple, peeled and grated",
+   "1 Tbsp honey",
+   "1 Tbsp soy sauce",
+   "1 Tbsp ketchup",
+   "1 package Japanese curry roux, 7-8 oz (S&B Golden Curry, Vermont Curry, Java Curry)",
+   "Steamed Japanese short-grain rice, to serve",
+   "Fukujinzuke (red pickled vegetables), to serve - optional"
+  ],
+  "steps": [
+   "Cut the potatoes and soak them in water 15 min to pull out excess starch. Season the chicken pieces with black pepper.",
+   "Heat the oil in a Dutch oven over medium. Add the onion wedges and saute about 5 min until translucent - do not stir too often or they will not take on colour. If you have 5 more minutes, give them 5 more; this is where a lot of the flavour comes from.",
+   "Add the garlic and grated ginger and stir through.",
+   "Add the chicken and cook, stirring, just until no longer pink on the outside. Lower the heat if the onions are browning too hard.",
+   "Add the stock, grated apple, honey, soy sauce and ketchup.",
+   "Add the carrots and potatoes. The liquid should BARELY cover everything - more than that and the curry comes out thin, and the meat and vegetables will release more as they cook.",
+   "Bring to a simmer and skim the foam and scum off the surface. Cover and cook on medium-low about 15 min, stirring now and then, until a skewer goes through the carrots and potatoes. (Simmer uncovered instead if everything is fully submerged.)",
+   "TURN OFF THE HEAT. Put 1-2 roux cubes in a ladleful of the hot cooking liquid and let them dissolve completely, stirring with a spoon, then stir that back into the pot. Repeat 2 cubes at a time until the whole package is in.",
+   "Turn the heat back to medium-low and simmer UNCOVERED 5-10 min, stirring often and scraping the bottom, until it thickens. Thin with a splash of water if it goes too far.",
+   "Serve over short-grain rice, with fukujinzuke on the side if you have it."
+  ],
+  "notes": "DISSOLVE THE ROUX IN A LADLE, OFF THE HEAT, two cubes at a time. Dropping the blocks straight into the pot is the classic mistake - they clump, sink, and scorch on the bottom. Heat off, ladle of hot broth, stir until smooth, pour back. BARELY COVER THE SOLIDS with liquid. Japanese curry should coat a spoon, not pour like soup, and you cannot un-thin it later without adding more roux. HEAT LEVEL: a standard box comes mild / medium hot / hot, and Japanese 'hot' lands around a mild-medium for most American palates. Buy Hot if you want any heat at all, and if it is still tame stir in 1/2 tsp cayenne or a spoonful of garam masala at the end. BOX SIZE: a full-size box is 7-8 oz and feeds 8-12. Some brands sell a small 4-serving box - check the weight or you will end up with watery curry. THE APPLE, HONEY, SOY AND KETCHUP are the point, not garnish. That combination is what gives Japanese curry its sweet-savoury backbone; skip them and it tastes like plain roux. A grated pear or a spoonful of mango chutney does the same job. POTATOES: Yukon gold holds its shape. Russets fall apart - if that is what you have, cut them into 6 pieces and add them only for the last 15-20 min. SUBS: beef, pork, shrimp, tofu or mushrooms all work. Quick-cooking additions (mushrooms, zucchini, squash) go in for the last 5 min; tofu goes in right after the roux just to warm through. STORING: fridge 3 days, freezer 1 month - but pull the potatoes out before freezing, they go mealy. REHEATING: it sets into a paste in the fridge and will scorch if you reheat it as is. Stir in 1/2 cup of water first, then warm it gently on low. It genuinely tastes better on day two.",
+  "createdAt": "2026-11-16T12:00:00.000Z",
+  "rating": 0
+ },
+ {
   "id": "arroz-amarillo",
   "title": "Arroz Amarillo (Yellow Rice)",
   "kind": "food",
@@ -65,15 +108,15 @@
    "Rub the marinade over every surface and down into the slits. Put the pork straight into the slow cooker insert, cover, and refrigerate 4 hours to overnight.",
    "Set the insert into a COLD slow cooker base - never a preheated one, a cold ceramic insert can crack. Whole roast goes fat side up. Pour the beer down the side of the crock, not over the pork.",
    "Cook on LOW until a fork twists with no resistance: 7-8 hours for a whole roast, 5-6 hours for precut chunks. Add about 45 min to either if the insert went in straight from the fridge. It holds on WARM afterwards.",
-   "Lift the pork onto a board. Pour the cooking liquid into a saucepan and skim off the fat.",
+   "Lift the pork onto a board. Pour the cooking liquid into a tall narrow container, skim or chill off the fat (15-20 min in the freezer sets it into a cap you can lift straight off), then pour it into a saucepan.",
    "Reduce the liquid by about a third, then TASTE before going further - cut pork gives up a saltier liquid than a whole roast, and reducing concentrates it.",
-   "Heat the broiler (or the oven to 450F). Shred or pull the pork, discarding any big pockets of fat, and spread it in a single layer on a foil-lined sheet pan.",
-   "Spoon about 1/2 cup of the reduced juices over the meat. Broil 5-8 min, until the edges are crisp and browned - watch it, it goes from brown to burnt fast.",
-   "Toss the meat, spoon over a little more juice, and broil another 3-5 min for a second round of crispy edges. Serve with the remaining sauce and lime wedges."
+   "Heat the broiler to HIGH/550F with a rack about 6 inches below the element. Shred or pull the pork, discarding any big pockets of fat, and spread it in a single layer on a foil-lined sheet pan.",
+   "Spoon about 1/2 cup of the reduced juices over the meat. Broil 5-8 min, checking at 4, until the edges are crisp and browned - watch it, it goes from brown to burnt in under a minute.",
+   "Toss the meat, spoon over a little more juice, and broil another 3-5 min for a second round of crispy edges. Lift the meat off the pan with a spatula rather than scraping the rendered fat back in. Serve with the remaining sauce and lime wedges."
   ],
-  "notes": "THIS IS THE BONELESS, SKINLESS SLOW COOKER VERSION of the Tsingtao oven roast. The original is an 8-10 lb bone-in SKIN-ON shoulder whose whole payoff is crackling from a 450F blast; a slow cooker steams, so skin comes out gray and gelatinous. Without skin that problem disappears and you crisp the SHREDDED meat instead - carnitas style, crunchy edges all the way through instead of one sheet of crackling, and better for tacos. DO NOT SKIP THE BROIL. Slow-cooked pork with no browning step tastes flat and looks grey; those 5-8 minutes are where all the roasted flavor comes from. PRECUT STEW MEAT works fine and is often cheaper, but: trim it first (boneless picnic stew runs fatty and sinewy - expect to lose 15-20% to trim), knock 2 hours off the cook, and expect a smaller yield. 4 lb of trays gives roughly 2-2.5 lb of cooked meat. All that cut surface also means the marinade penetrates fully rather than sitting on the outside, so the cooking liquid comes out saltier - taste it before reducing it hard. THE OIL IS NEARLY OPTIONAL. In a slow cooker braise it is not searing anything, it is only helping the spice paste spread, and pork shoulder brings plenty of its own fat. No oil in the house? Melted butter or 3 Tbsp of mayonnaise both work (mayo is mostly oil and clings better than oil does), or leave it out entirely and loosen the paste with a tablespoon of the beer. OVERNIGHT MARINADE IS GOOD, not risky. One lime across 4-5 lb of pork is far too dilute to do any damage in 8-10 hours, and 1 Tbsp of salt over that weight is a dry-brine level that wants the time. Mushy exteriors come from much more acid or 24+ hours. EARLY START: marinate in the slow cooker insert itself the night before, then in the morning just drop the insert into a cold base, add the beer and switch on. ONLY 3/4 TO 1 CUP OF BEER, not the bottle the original calls for. A slow cooker has no evaporation and pork throws off plenty of its own liquid - a full bottle leaves it boiling in a pond instead of steaming above it. Chunks release liquid faster than a roast, hence the smaller amount. BEER: Modelo Especial is a direct swap for Tsingtao, both pale lagers, Modelo slightly maltier. Negra Modelo works too but gives a darker, roastier, more caramel sauce. GARLIC: one head is about 10-12 cloves, roughly 3 Tbsp minced or 1.5 oz by weight. Jarred pre-minced is milder and slightly sour from the citric acid it is packed in, so use 4 Tbsp of it rather than 3. YIELD: plan about 1 lb of raw boneless pork per person for a plated main, less for tacos. Bone-in runs about an hour longer than boneless. SERVE WITH the arroz amarillo in this box. LEFTOVERS shred and freeze well; re-crisp under the broiler rather than microwaving. Good in tacos, on rice, in sandwiches with pickled onion.",
+  "notes": "THIS IS THE BONELESS, SKINLESS SLOW COOKER VERSION of the Tsingtao oven roast. The original is an 8-10 lb bone-in SKIN-ON shoulder whose whole payoff is crackling from a 450F blast; a slow cooker steams, so skin comes out gray and gelatinous. Without skin that problem disappears and you crisp the SHREDDED meat instead - carnitas style, crunchy edges all the way through instead of one sheet of crackling, and better for tacos. DO NOT SKIP THE BROIL. Slow-cooked pork with no browning step tastes flat and looks grey; those 5-8 minutes are where all the roasted flavor comes from. Rack 6 inches down, not the top slot, or the top chars while the rest stays cold. DEGREASING: lift the meat out first with a slotted spoon, then deal with the liquid alone - chasing fat around shredded pork is hopeless. Tall narrow container, 15-20 min in the freezer, lift the solid cap off. In a hurry: let it settle 5 min, skim with a shallow ladle, then lay flat paper towels on the surface and peel them off, two or three passes. Degrease BEFORE reducing or you concentrate a greasy sauce. The broil is a second degreasing - the fat renders onto the pan. PRECUT STEW MEAT works fine and is often cheaper, but: trim it first (boneless picnic stew runs fatty and sinewy - expect to lose 15-20% to trim), knock 2 hours off the cook, and expect a smaller yield. 4 lb of trays gives roughly 2-2.5 lb of cooked meat. All that cut surface also means the marinade penetrates fully rather than sitting on the outside, so the cooking liquid comes out saltier - taste it before reducing it hard. THE OIL IS NEARLY OPTIONAL. In a slow cooker braise it is not searing anything, it is only helping the spice paste spread, and pork shoulder brings plenty of its own fat. No oil in the house? Melted butter or 3 Tbsp of mayonnaise both work (mayo is mostly oil and clings better than oil does), or leave it out entirely and loosen the paste with a tablespoon of the beer. OVERNIGHT MARINADE IS GOOD, not risky. One lime across 4-5 lb of pork is far too dilute to do any damage in 8-10 hours, and 1 Tbsp of salt over that weight is a dry-brine level that wants the time. Mushy exteriors come from much more acid or 24+ hours. EARLY START: marinate in the slow cooker insert itself the night before, then in the morning just drop the insert into a cold base, add the beer and switch on. ONLY 3/4 TO 1 CUP OF BEER, not the bottle the original calls for. A slow cooker has no evaporation and pork throws off plenty of its own liquid - a full bottle leaves it boiling in a pond instead of steaming above it. Chunks release liquid faster than a roast, hence the smaller amount. BEER: Modelo Especial is a direct swap for Tsingtao, both pale lagers, Modelo slightly maltier. Negra Modelo works too but gives a darker, roastier, more caramel sauce. GARLIC: one head is about 10-12 cloves, roughly 3 Tbsp minced or 1.5 oz by weight. Jarred pre-minced is milder and slightly sour from the citric acid it is packed in, so use 4 Tbsp of it rather than 3. YIELD: plan about 1 lb of raw boneless pork per person for a plated main, less for tacos. Bone-in runs about an hour longer than boneless. SERVE WITH the arroz amarillo in this box. LEFTOVERS shred and freeze well; re-crisp under the broiler rather than microwaving. Good in tacos, on rice, in sandwiches with pickled onion.",
   "createdAt": "2026-11-13T18:00:00.000Z",
-  "updatedAt": "2026-11-14T12:00:00.000Z",
+  "updatedAt": "2026-11-16T12:00:00.000Z",
   "rating": 0
  },
  {
