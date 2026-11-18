@@ -220,7 +220,7 @@ function catsOf(r){
   return out;
 }
 function inCat(r){ return cat==="all" || catsOf(r).has(cat); }
-const COURSES=[["dinner","Dinners"],["side","Sides"],["soup","Soups & Stews"],["breakfast","Breakfast"]];
+const COURSES=[["dinner","Dinners"],["kid","Kids"],["side","Sides"],["soup","Soups & Stews"],["breakfast","Breakfast"]];
 function courseOf(r){
   const out=new Set();
   if(isDrink(r)) return out;
@@ -228,9 +228,11 @@ function courseOf(r){
   const soup=/\bsoups?\b|\blaksa\b|\bstews?\b|\bchili\b|\bchowder\b|\bramen\b|\bpho\b|\bbisque\b|\bbroth\b/.test(txt);
   const side=/\bside\b|\bsalad\b|\bslaw\b|\bsauce\b|\bdressing\b|\bdip\b|\bappetizer\b|\bsnack\b|\bbread\b|\bcondiment\b|\bvegetables?\b/.test(txt);
   const am=/\bbreakfast\b|\bbrunch\b|\bpancakes?\b|\bwaffles?\b|\bmuffins?\b|\bdessert\b|\bcookies?\b|\bcake\b/.test(txt);
+  const kid=/\bkids?\b|\bkid-friendly\b|\btoddlers?\b|\bbaby\b|\bweaning\b|\bpicky\b/.test(txt);
   if(soup) out.add("soup");
   if(side && !soup) out.add("side");
   if(am) out.add("breakfast");
+  if(kid && !side && !am) out.add("kid");
   if(!side && !am) out.add("dinner");
   return out;
 }
@@ -475,9 +477,9 @@ if(/(^|[?&#])list\b/.test(location.search+location.hash)){
 $("#grid").innerHTML='<div class="loading" style="grid-column:1/-1">Loading recipes…</div>';
 const bust="?v="+Date.now();
 const grab=u=>fetch(u+bust).then(r=>r.ok?r.json():[]).catch(()=>[]);
-Promise.all([grab("recipes.json"),grab("recipes-extra.json"),grab("recipes-new.json"),grab("recipes-latest.json")])
-  .then(([a,b,c,d])=>{
-    const all=(d||[]).concat(c||[],b||[],a||[]);
+Promise.all([grab("recipes.json"),grab("recipes-extra.json"),grab("recipes-new.json"),grab("recipes-latest.json"),grab("recipes-top.json")])
+  .then(([a,b,c,d,e])=>{
+    const all=(e||[]).concat(d||[],c||[],b||[],a||[]);
     if(!all.length) throw new Error("empty");
     const seen=new Set(); RECIPES=[];
     all.forEach(r=>{ if(r&&r.id&&!seen.has(r.id)){ seen.add(r.id); RECIPES.push(r); } });
