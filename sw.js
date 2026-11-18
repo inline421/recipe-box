@@ -1,13 +1,11 @@
 // Recipe Box service worker - app shell cached, recipes refreshed when online.
-const SHELL = 'rb-shell-v7';
-const DATA  = 'rb-data-v1';
-const LIB   = 'rb-lib-v1';
+const SHELL = 'rb-shell-v8';
+const DATA = 'rb-data-v1';
+const LIB = 'rb-lib-v1';
 const SHELL_FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
-
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(SHELL).then(c => c.addAll(SHELL_FILES)).then(() => self.skipWaiting()));
 });
-
 self.addEventListener('activate', e => {
   e.waitUntil(
     caches.keys()
@@ -15,12 +13,10 @@ self.addEventListener('activate', e => {
       .then(() => self.clients.claim())
   );
 });
-
 self.addEventListener('fetch', e => {
   const req = e.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
-
   // Firebase SDK from gstatic: cache first, so the grocery list still loads offline
   if (url.hostname === 'www.gstatic.com' && url.pathname.indexOf('/firebasejs/') === 0) {
     e.respondWith(
@@ -31,9 +27,7 @@ self.addEventListener('fetch', e => {
     );
     return;
   }
-
   if (url.origin !== location.origin) return;
-
   // recipe data: network first so new recipes show up, fall back to last good copy
   if (/recipes[a-z0-9-]*\.json$/.test(url.pathname)) {
     const key = url.pathname;
@@ -46,7 +40,6 @@ self.addEventListener('fetch', e => {
     );
     return;
   }
-
   // everything else: cache first, refresh in background
   e.respondWith(
     caches.match(req).then(hit => {
