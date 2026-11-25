@@ -223,6 +223,8 @@
   "totalTime": "about 1 hr",
   "servings": "about 13-14 cups cooked (12-14 people)",
   "tags": [
+   "thanksgiving",
+   "mom's",
    "puerto rican",
    "rice",
    "caldero",
@@ -258,12 +260,13 @@
  },
  {
   "id": "sausage-apple-cornbread-stuffing",
-  "title": "Sausage & Apple Cornbread Stuffing",
+  "title": "Sausage & Apple Cornbread Stuffing (Mom's)",
   "kind": "food",
   "totalTime": "about 50 min",
   "servings": "about 16-20 (two 9x13 pans)",
   "tags": [
    "thanksgiving",
+   "mom's",
    "stuffing",
    "sausage",
    "big batch",
@@ -302,6 +305,7 @@
   "servings": "about 15 (two 9x12 pans)",
   "tags": [
    "thanksgiving",
+   "mom's",
    "sweet potato",
    "yams",
    "casserole",
