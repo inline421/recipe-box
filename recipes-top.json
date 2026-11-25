@@ -255,5 +255,43 @@
   "notes": "Mom's recipe, sized for 3 cans of gandules. Her note doesn't list water; about 1 cup per cup of rice, on top of the can liquid, is an estimate. For a bigger crowd, keep 3 cans but use 6 cups rice, 3 sofrito, 3 Sabor a Jamón, 3 Sazón, about 1 can tomato sauce and about 6 cups water (about 18 cups cooked), and use the longer cook times. Lower the heat before covering so the bottom doesn't scorch. Fold gently so it doesn't get mushy.",
   "createdAt": "2026-11-25T18:45:00.000Z",
   "rating": 0
+ },
+ {
+  "id": "sausage-apple-cornbread-stuffing",
+  "title": "Sausage & Apple Cornbread Stuffing",
+  "kind": "food",
+  "totalTime": "about 50 min",
+  "servings": "about 16-20 (two 9x13 pans)",
+  "tags": [
+   "thanksgiving",
+   "stuffing",
+   "sausage",
+   "big batch",
+   "holiday"
+  ],
+  "source": "Arnold Cornbread Cubed Stuffing bag, doubled, with sausage and apple",
+  "url": "",
+  "ingredients": [
+   "2 bags (12 oz each) Arnold Cornbread Cubed Stuffing",
+   "2 packs sausage (6 links each), casings removed",
+   "4-8 Tbsp butter (use less if you keep some sausage fat)",
+   "2 cups diced onion",
+   "2 cups diced celery",
+   "1 Honeycrisp apple, skin on, 1/2-inch dice",
+   "1 cup (4 oz) applesauce",
+   "3 1/2 cups chicken broth",
+   "Cooking spray"
+  ],
+  "steps": [
+   "Heat the oven to 350F. Spray two 9x13 baking dishes.",
+   "Brown the sausage in a large skillet, breaking it into crumbles. Drain most of the fat and set the sausage aside.",
+   "Melt the butter in the same skillet over medium heat. Add the onion, celery and apple; cook 5 min.",
+   "Add the broth and whisk in the applesauce. Bring to a boil.",
+   "Put the stuffing cubes and sausage in a large bowl. Pour the hot broth mixture over, mix well and fluff with a fork.",
+   "Spread into the two dishes. Cover with foil and bake 20 min. Uncover and bake about 10 min more, until the top is lightly browned and crisp."
+  ],
+  "notes": "Bag recipe doubled: the bag calls for 4 Tbsp butter, 1 cup onion, 1 cup celery and 2 cups broth per bag. Broth is cut by 1/2 cup total because the applesauce adds liquid. If it looks dry before baking, add broth a splash at a time.",
+  "createdAt": "2026-11-25T20:31:00.000Z",
+  "rating": 0
  }
 ]
