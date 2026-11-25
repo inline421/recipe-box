@@ -215,5 +215,45 @@
   "createdAt": "2026-10-31T12:00:00.000Z",
   "updatedAt": "2026-11-18T22:30:00.000Z",
   "rating": 0
+ },
+ {
+  "id": "arroz-con-gandules-mom",
+  "title": "Arroz con Gandules (Mom's)",
+  "kind": "food",
+  "totalTime": "about 1 hr",
+  "servings": "about 13-14 cups cooked (12-14 people)",
+  "tags": [
+   "puerto rican",
+   "rice",
+   "caldero",
+   "big batch",
+   "holiday"
+  ],
+  "source": "Mom's handwritten recipe",
+  "url": "",
+  "ingredients": [
+   "Olive oil, enough to cover the bottom of the caldero",
+   "2 bags frozen sofrito",
+   "2 packets Goya Sabor a Jamón",
+   "2 packets Sazón Goya con Culantro y Achiote",
+   "3 cans green gandules (pigeon peas), with their liquid",
+   "1/2 to 3/4 can tomato sauce",
+   "About 4 1/2 cups water",
+   "Salt and pepper, to taste",
+   "4 1/2 cups rice",
+   "Optional: 1/2 cup chopped ham or 2-3 slices bacon, browned first"
+  ],
+  "steps": [
+   "If using ham or bacon, brown it in the caldero first.",
+   "Cover the bottom of the caldero with olive oil and heat it. Add the sofrito and cook until fragrant.",
+   "Stir in the Sabor a Jamón, the Sazón, the gandules with their liquid and the tomato sauce. Add the water and season with salt and pepper. Bring to a boil.",
+   "Stir in the rice. Cook on medium heat until the water is absorbed.",
+   "Turn the heat to low. Cover the caldero with aluminum foil, then the lid. Cook 20-25 min without lifting the lid.",
+   "Gently fold the rice from the bottom up. Cover again with foil and the lid.",
+   "If the rice is still hard, sprinkle on 1/4-1/2 cup water and cook 10-15 min more. Scrape up the crispy pegao from the bottom and serve it too."
+  ],
+  "notes": "Mom's recipe, sized for 3 cans of gandules. Her note doesn't list water; about 1 cup per cup of rice, on top of the can liquid, is an estimate. For a bigger crowd, keep 3 cans but use 6 cups rice, 3 sofrito, 3 Sabor a Jamón, 3 Sazón, about 1 can tomato sauce and about 6 cups water (about 18 cups cooked), and use the longer cook times. Lower the heat before covering so the bottom doesn't scorch. Fold gently so it doesn't get mushy.",
+  "createdAt": "2026-11-25T18:45:00.000Z",
+  "rating": 0
  }
 ]
