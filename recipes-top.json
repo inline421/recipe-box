@@ -293,5 +293,43 @@
   "notes": "Bag recipe doubled: the bag calls for 4 Tbsp butter, 1 cup onion, 1 cup celery and 2 cups broth per bag. Broth is cut by 1/2 cup total because the applesauce adds liquid. If it looks dry before baking, add broth a splash at a time.",
   "createdAt": "2026-11-25T20:31:00.000Z",
   "rating": 0
+ },
+ {
+  "id": "yam-puff-mom",
+  "title": "Yam Puff (Mom's)",
+  "kind": "food",
+  "totalTime": "about 2 hr (1 hr roasting yams)",
+  "servings": "about 15 (two 9x12 pans)",
+  "tags": [
+   "thanksgiving",
+   "sweet potato",
+   "yams",
+   "casserole",
+   "big batch",
+   "holiday",
+   "make ahead"
+  ],
+  "source": "Mom's recipe card, doubled",
+  "url": "",
+  "ingredients": [
+   "About 6 lb sweet potatoes (6 cups cooked, mashed)",
+   "Up to 2 cups granulated sugar (we use a little more than 1 cup)",
+   "1 cup butter, melted",
+   "2 cups milk (whole or evaporated)",
+   "2 tsp salt",
+   "2 tsp vanilla",
+   "4 eggs, beaten",
+   "Butter or cooking spray for the pans",
+   "Topping: see back of card (to add)"
+  ],
+  "steps": [
+   "Roast the sweet potatoes whole at 400F for 45-60 min, until very soft. Cool slightly, peel, and mash. Measure 6 cups.",
+   "Mix the yams, sugar, melted butter, milk, salt, vanilla and eggs. Beat until fluffy.",
+   "Pour into 2 buttered (or sprayed) 9x12 pans.",
+   "Add topping, then bake at 350F for 30-40 min, until puffed and set in the center."
+  ],
+  "notes": "You can use less sugar: the doubled card amount is 2 cups, we use a little more than 1 cup. Card says 'bake as directed'; 350F for 30-40 min is an estimate until the back of the card is checked. Topping is on the back of the card and still needs to be added. Make ahead: freeze the yam mixture without topping; thaw, then add topping and bake. Roast the yams rather than boil them so the puff isn't watery.",
+  "createdAt": "2026-11-25T20:44:00.000Z",
+  "rating": 0
  }
 ]
