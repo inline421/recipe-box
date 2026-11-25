@@ -335,5 +335,51 @@
   "notes": "Bake uncovered: the eggs need dry heat to puff and set; a lid traps steam and leaves it wet and flat. You can use less sugar: the doubled card amount is 2 cups, we use a little more than 1 cup. Card says 'bake as directed'; the times are estimates until the back of the card is checked. Topping is on the back of the card and still needs to be added. Make ahead: freeze the yam mixture without topping; thaw, then add topping and bake. Roast the yams rather than boil them so the puff isn't watery.",
   "createdAt": "2026-11-25T20:44:00.000Z",
   "rating": 0
+ },
+ {
+  "id": "habichuelas-rice-mom",
+  "title": "Red Small Kidney Beans & White Rice (Mom's)",
+  "kind": "food",
+  "totalTime": "about 45 min",
+  "servings": "about 4 per can of beans",
+  "tags": [
+   "thanksgiving",
+   "mom's",
+   "puerto rican",
+   "beans",
+   "rice",
+   "habichuelas",
+   "favorite"
+  ],
+  "source": "Mom's handwritten recipe",
+  "url": "",
+  "ingredients": [
+   "BEANS:",
+   "2 big spoons virgin olive oil",
+   "Sofrito (about 1/4-1/3 cup per can of beans)",
+   "1 packet Goya Sabor a Jamón",
+   "1 packet Sazón Goya con Culantro y Achiote (coriander & annatto)",
+   "1 can small red kidney beans, with liquid",
+   "1/2 can tomato sauce",
+   "1 bean-can of water (a little more if needed)",
+   "Salt, to taste",
+   "RICE:",
+   "White rice",
+   "Cold water",
+   "1 big spoon virgin olive oil"
+  ],
+  "steps": [
+   "BEANS: Add the olive oil to the pot. Add the sofrito and cook 10 min on medium. Do not burn the sofrito.",
+   "Add the Sabor a Jamón and the Sazón.",
+   "Add the beans, then the 1/2 can tomato sauce, then 1 can of water (use the empty bean can; a little more if needed).",
+   "Simmer uncovered about 15-20 min, until the sauce thickens; mash a few beans against the pot to help. Taste for salt at the end.",
+   "RICE: Wash the rice in cold water and drain. Pour it into a pot and add cold water a little above the rice line (about 1/2 inch, the first knuckle).",
+   "Add about 1 big spoon olive oil and mix with the rice.",
+   "Bring to a boil on medium-high. Once boiling, lower to low, cover, and cook until all the water is absorbed.",
+   "Serve the beans over the rice."
+  ],
+  "notes": "One of Jarred's favorite things his mom made. Her card doesn't list the sofrito amount, the bean simmer time, salt, or how much rice; those are filled in as estimates. Sazon and Sabor a Jamon are already salty, so taste before adding salt. For 15 people: 3-4 cans of beans, scaling everything else to match.",
+  "createdAt": "2026-11-25T21:30:00.000Z",
+  "rating": 0
  }
 ]
