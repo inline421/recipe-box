@@ -1,11 +1,60 @@
 [
  {
+  "id": "split-pea-soup-nyt",
+  "title": "Split Pea Soup",
+  "kind": "food",
+  "totalTime": "2 hr 20 min (25 min hands-on)",
+  "servings": "4 big bowls, realistically 6",
+  "tags": [
+   "soup",
+   "one pot",
+   "make ahead",
+   "freezer",
+   "winter",
+   "pork",
+   "vegetarian option"
+  ],
+  "source": "NYT Cooking - Ali Slagle",
+  "url": "https://cooking.nytimes.com/recipes/1019881-split-pea-soup",
+  "ingredients": [
+   "PICK ONE: 6 slices bacon, or 1 (1-lb) smoked ham hock, or 1 tsp smoked paprika for vegetarian",
+   "2 Tbsp extra-virgin olive oil, plus more as needed",
+   "2 medium leeks, white and pale green parts, rinsed well and thinly sliced (about 1 3/4 cups)",
+   "4 cloves garlic, minced",
+   "1 medium onion, diced (about 1 1/2 cups)",
+   "Salt and black pepper",
+   "2 medium carrots, scrubbed and diced (about 1 1/2 cups)",
+   "1 lb dried split green peas, SORTED AND RINSED - added in two halves, see notes",
+   "2 fresh thyme sprigs",
+   "8 to 12 cups chicken stock or water (low-sodium - see notes)",
+   "Lemon wedges, to serve"
+  ],
+  "steps": [
+   "BACON: cook it in a large pot or Dutch oven over medium until crisp, 12-13 min. Lift it onto paper towels and leave the fat in the pot. Crumble it later for garnish. HAM HOCK: heat the olive oil over medium-high and brown the hock all over, about 6 min. VEGETARIAN: just heat the olive oil over medium.",
+   "Add the leeks, garlic and onion and season generously with salt and pepper. Cook over medium, stirring now and then, 5-8 min until tender. Add a splash more oil if it looks dry.",
+   "Stir in the carrots, the smoked paprika if using, HALF the split peas, the thyme and 8 cups of stock or water. Bring to a boil, then reduce to a simmer, partly covered, stirring occasionally, about 45 min, until those peas are tender.",
+   "Mash coarsely with a potato masher, or a few quick blitzes with an immersion blender - watch out for the thyme sprigs. Blitz longer if you want it smoother.",
+   "Add the REMAINING half pound of split peas and simmer about 1 hour more, until they are soft. Too thick at any point, add more stock or water; too thin, take the lid off for the rest of the simmer.",
+   "If you used a ham hock, pull the meat off the bone, cut it small and stir it back in.",
+   "Season with salt and pepper. Serve with the crumbled bacon and lemon wedges."
+  ],
+  "notes": "THE SPLIT-PEA TRICK IS THE WHOLE POINT. Half the peas go in at the start and cook down to a puree; the other half go in after the mash and stay whole. That is what gives it texture instead of baby food. Do not dump them all in at once. SORT AND RINSE THE PEAS - the recipe does not say to and a commenter found gravel in their pot. Tip them onto a tray, look them over, rinse. Thirty seconds. SODIUM: the recipe runs about 2,141 mg a serving as written, which is very high. Use low-sodium stock or half stock half water, and go easy with the salt until the end - the bacon or hock is salting it too. THREE WAYS TO BUILD IT: bacon (crisp it first, cook everything in the fat, crumble over the top); smoked ham hock (brown it, simmer it in, shred the meat back); or vegetarian with 1 tsp smoked paprika, which genuinely works - the smoke is what you are actually after. THE LEMON IS NOT A GARNISH. Split pea soup goes heavy and flat without acid. Squeeze it over each bowl. THICKNESS: it keeps thickening as it sits and sets almost solid in the fridge. Thin with stock or water when reheating, more than feels right. PRESSURE COOKER (from the NYT article): everything in with about 6 cups of stock, 20 min on high pressure, manual release, then blitz. Under an hour. MAKE AHEAD: a full week in the fridge per the recipe's own tip, and it freezes well. It is better on day two. A COMMENTER'S VARIATION worth knowing: yellow split peas instead of green, with diced celery root and yellow potatoes added in the last 30-45 min. Less of the drab green colour, more complex, vegetables stay intact. SERVES: it says 4 but a pound of dried peas makes a lot - call it 6 unless everyone is very hungry.",
+  "createdAt": "2026-11-27T12:00:00.000Z",
+  "rating": 0
+ },
+ {
   "id": "japanese-curry-chicken-potpie",
   "title": "Japanese Curry Chicken Potpie",
   "kind": "food",
   "totalTime": "1 hr 20 min (35 min active)",
   "servings": "4-6",
-  "tags": ["japanese", "chicken", "comfort food", "one skillet", "weeknight"],
+  "tags": [
+   "japanese",
+   "chicken",
+   "comfort food",
+   "one skillet",
+   "weeknight"
+  ],
   "source": "Food & Wine",
   "url": "https://www.foodandwine.com/japanese-curry-chicken-pot-pie-8759241",
   "video": "https://content.jwplatform.com/videos/JDz09zvx-eFraYBD7.mp4",
@@ -44,7 +93,12 @@
   "kind": "food",
   "totalTime": "40 min",
   "servings": "4-6",
-  "tags": ["thai", "soup", "weeknight", "one pot"],
+  "tags": [
+   "thai",
+   "soup",
+   "weeknight",
+   "one pot"
+  ],
   "source": "Food & Wine",
   "url": "https://www.foodandwine.com/red-curry-dumpling-soup-11868814",
   "video": "https://cdn.jwplayer.com/videos/CtbPnEaX-eFraYBD7.mp4",
@@ -74,10 +128,10 @@
    "Add the wontons, return to a simmer, then stir in the bok choy. Reduce to medium and simmer uncovered, stirring occasionally, until the dumplings are cooked through and the bok choy is tender-crisp, 3-5 min.",
    "Divide among bowls, garnish, and serve immediately."
   ],
-  "notes": "Swap spinach or napa cabbage for the bok choy; any frozen dumpling works. Chili oil drizzle for extra heat. Leftovers keep 2 days max - dumplings go mushy after that.",
+  "notes": "Swap spinach or napa cabbage for the bok choy; any frozen dumpling works. Chili oil drizzle for extra heat. Leftovers keep 2 days max - dumplings go mushy after that. MAKE THE BROTH A DAY AHEAD: stop after the broth comes to a simmer (before the wontons and bok choy) and refrigerate 1-2 days - it improves overnight. Hold back the lime juice and add it at serving; fresh acid goes dull in the fridge. Reheat to a simmer, then add dumplings and greens for 3-5 min. FREEZING: leave the coconut milk out of the base and freeze just the broth - coconut milk splits when frozen and thaws grainy. Stir a fresh can in when you reheat. BROCCOLI: 2-3 cups of florets, cut 1-1.5 inches, in about a minute before the dumplings so everything finishes together; peel and thinly slice the stems and add them 2 min ahead of the florets. Add 1/2 to 1 cup more broth if you load it up, or the broth-to-solids ratio tips toward stew. Fresh on the night, never in the make-ahead broth.",
   "rating": 0,
   "createdAt": "2026-09-22T12:00:00.000Z",
-  "updatedAt": "2026-10-14T18:00:00.000Z"
+  "updatedAt": "2026-11-23T12:00:00.000Z"
  },
  {
   "id": "lemony-miso-cabbage",
@@ -85,7 +139,14 @@
   "title": "Lemony Miso Cabbage",
   "totalTime": "15 min (5 min prep, 10 min cook)",
   "servings": "4",
-  "tags": ["side", "cabbage", "vegetarian", "one pan", "quick", "weeknight"],
+  "tags": [
+   "side",
+   "cabbage",
+   "vegetarian",
+   "one pan",
+   "quick",
+   "weeknight"
+  ],
   "source": "NYT Cooking",
   "url": "https://cooking.nytimes.com/recipes/776271001-lemony-miso-cabbage",
   "ingredients": [
@@ -116,7 +177,14 @@
   "title": "Quick Chicken Laksa",
   "totalTime": "45 min (under 30 min prep, 10-30 min cook)",
   "servings": "2",
-  "tags": ["malaysian", "soup", "noodles", "chicken", "weeknight", "dairy free"],
+  "tags": [
+   "malaysian",
+   "soup",
+   "noodles",
+   "chicken",
+   "weeknight",
+   "dairy free"
+  ],
   "source": "BBC Food - Justin Tsang (@justin_the_dustbin)",
   "url": "https://www.bbc.co.uk/food/recipes/quick_chicken_laksa_27176",
   "video": "https://www.instagram.com/reel/DeBlLxUNfOq/",
@@ -160,7 +228,14 @@
   "title": "Thai Green Curry Lentil Soup (One Pot, Dry Lentils)",
   "totalTime": "40 min (20 min active)",
   "servings": "4",
-  "tags": ["thai", "soup", "lentils", "weeknight", "one pot", "vegetarian option"],
+  "tags": [
+   "thai",
+   "soup",
+   "lentils",
+   "weeknight",
+   "one pot",
+   "vegetarian option"
+  ],
   "source": "Food & Wine, adapted for dry pardina lentils",
   "url": "https://www.foodandwine.com/thai-green-curry-lentil-soup-12149243",
   "ingredients": [
